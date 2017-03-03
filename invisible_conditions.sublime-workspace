@@ -1,0 +1,1196 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Invisi",
+				"Invisible"
+			],
+			[
+				"tabl",
+				"table-layout"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"list-ty",
+				"list-style"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"wsA",
+				"wsAcceptEncoded"
+			],
+			[
+				"en",
+				"endHeaderIndex\tvar"
+			],
+			[
+				"to",
+				"toString(  )\tString"
+			],
+			[
+				"Sta",
+				"CallStack\tclass"
+			],
+			[
+				"readB",
+				"readBytes(...)\tInt"
+			],
+			[
+				"D",
+				"Dynamic\tclass"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"pa",
+				"paramURL"
+			],
+			[
+				"requ",
+				"require"
+			],
+			[
+				"bu",
+				"businessId"
+			],
+			[
+				"api",
+				"apiURL"
+			],
+			[
+				"wri",
+				"writeCarsXML"
+			],
+			[
+				"par",
+				"parseCarsXML"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"ne",
+				"newXml"
+			],
+			[
+				"pl",
+				"playerNewRoot"
+			],
+			[
+				"ra",
+				"randomPlayer"
+			],
+			[
+				"pla",
+				"playerOne"
+			],
+			[
+				"response",
+				"responsePt"
+			],
+			[
+				"ar",
+				"argv"
+			],
+			[
+				"arg",
+				"argc"
+			],
+			[
+				"res",
+				"responsePt"
+			],
+			[
+				"Co",
+				"Controls"
+			],
+			[
+				"ren",
+				"renderer"
+			],
+			[
+				"re",
+				"renderer"
+			],
+			[
+				"SC",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"inc",
+				"inc\t#include \"…\""
+			],
+			[
+				"game",
+				"gameObjects"
+			],
+			[
+				"rend",
+				"Render"
+			],
+			[
+				"Re",
+				"Renderer"
+			],
+			[
+				"v",
+				"virtual"
+			],
+			[
+				"SCR",
+				"SCREEN_WIDTH"
+			],
+			[
+				"im",
+				"impl\timpl"
+			],
+			[
+				"if",
+				"ifndef\tifndef"
+			],
+			[
+				"comp",
+				"component"
+			],
+			[
+				"new",
+				"newPlayer"
+			],
+			[
+				"Car",
+				"CarRenderer"
+			],
+			[
+				"Game",
+				"GameObject"
+			],
+			[
+				"Gam",
+				"GameObject"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"Key",
+				"CarKeyboardControls"
+			],
+			[
+				"up",
+				"updateables"
+			],
+			[
+				"upda",
+				"updateables"
+			],
+			[
+				"pr",
+				"private"
+			],
+			[
+				"Ca",
+				"CarKeyboardControls"
+			],
+			[
+				"SDL_GameCo",
+				"SDL_GameControllerGetAxis\tSint16 SDL_GameControllerGetAxis(SDL_GameController *gamecontroller, SDL_GameControllerAxis axis)"
+			],
+			[
+				"gameCo",
+				"gameController"
+			],
+			[
+				"SDL_G",
+				"SDL_GameController"
+			],
+			[
+				"SDL_Cont",
+				"SDL_CONTROLLER_BUTTON_DPAD_RIGHT"
+			],
+			[
+				"SDL_GameC",
+				"SDL_GameControllerName\tconst char * SDL_GameControllerName(SDL_GameController *gamecontroller)"
+			],
+			[
+				"x",
+				"xDirection"
+			],
+			[
+				"SDL_Game",
+				"SDL_GameControllerOpen"
+			],
+			[
+				"SDL_GameControllerButto",
+				"SDL_GameControllerGetButton\tUint8 SDL_GameControllerGetButton(SDL_GameController *gamecontroller, SDL_GameControllerButton button)"
+			],
+			[
+				"SCREE",
+				"SCREEN_WIDTH"
+			],
+			[
+				"SDL_K",
+				"SDL_KEYDOWN"
+			],
+			[
+				"SCRE",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"SCE",
+				"SCREEN_WIDTH"
+			],
+			[
+				"SDL_r",
+				"SDL_Rect"
+			],
+			[
+				"SDL_Re",
+				"SDL_Rect"
+			],
+			[
+				"SDL_Get",
+				"SDL_GetTicks\tUint32 SDL_GetTicks()"
+			],
+			[
+				"SDL_RenderFil",
+				"SDL_RenderFillRect\tint SDL_RenderFillRect(SDL_Renderer *renderer, const SDL_Rect *rect)"
+			],
+			[
+				"SDL_Rend",
+				"SDL_RenderPresent\tvoid SDL_RenderPresent(SDL_Renderer *renderer)"
+			],
+			[
+				"SDL_Event",
+				"SDL_EventType\tSDL_EventType"
+			],
+			[
+				"str",
+				"string"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "invisible_conditions.sublime-project",
+			"settings":
+			{
+				"buffer_size": 211,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 1930,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.sh",
+			"settings":
+			{
+				"buffer_size": 58,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/index.pug",
+			"settings":
+			{
+				"buffer_size": 1868,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/theme.scss",
+			"settings":
+			{
+				"buffer_size": 653,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "forms\nclients\njobs\n\ndb.users.findOne({email: \"kimi@theblogdept.com\"}, {_id:1})\ndb.brands.find({user: ObjectId(\"5878360fc98aa3cc73fe2fdf\")})\ndb.forms.count({brand: ObjectId(\"589b7f0d68cddc2fd208c8a1\")})\ndb.forms.updateMany({brand: ObjectId(\"589b7f0d68cddc2fd208c8a1\")}, {brand: ObjectId(\"5878360fc98aa3cc73fe2fdf\")})\ndb.clients.updateMany({brand: ObjectId(\"589b7f0d68cddc2fd208c8a1\")}, {brand: ObjectId(\"5878360fc98aa3cc73fe2fdf\")})\ndb.jobs.updateMany({brand: ObjectId(\"589b7f0d68cddc2fd208c8a1\")}, {brand: ObjectId(\"5878360fc98aa3cc73fe2fdf\")})",
+			"settings":
+			{
+				"buffer_size": 544,
+				"line_ending": "Unix",
+				"name": "forms"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Build and Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				"Build and Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 221.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instla",
+				"Package Control: Install Package"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"eas",
+				"EasyClangComplete: Settings - Default"
+			],
+			[
+				"clangfo",
+				"Clang Format: Format Selection"
+			],
+			[
+				"clangcom",
+				"EasyClangComplete: Settings - Default"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"easy",
+				"EasyClangComplete: Settings - Default"
+			],
+			[
+				"clang",
+				"EasyClangComplete: Open completion triggers location"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package sett",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 431.0
+	},
+	"console":
+	{
+		"height": 239.0,
+		"history":
+		[
+			"print(\"test\")",
+			"make",
+			"ls",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/adam/Documents/invisible_conditions",
+		"/home/adam/Documents/invisible_conditions/public",
+		"/home/adam/Documents/invisible_conditions/scss",
+		"/home/adam/Documents/invisible_conditions/templates"
+	],
+	"file_history":
+	[
+		"/home/adam/Documents/invisible_conditions/scss/theme.scss",
+		"/home/adam/Documents/invisible_conditions/templates/index.pug",
+		"/home/adam/Documents/invisible_conditions/public/index.html",
+		"/home/adam/Desktop/thankyou.txt",
+		"/home/adam/Downloads/contacts.csv",
+		"/home/adam/.bashrc",
+		"/home/adam/Downloads/contacts (2).csv",
+		"/home/adam/Downloads/mongodb.log.txt",
+		"/home/adam/Downloads/transactions (16).csv",
+		"/home/adam/bin/dubsado.sh",
+		"/home/adam/Documents/Dubsado/app/migrations/extractInvoiceAndContract/upgrade.js",
+		"/home/adam/Documents/Dubsado/app/migrations/extractInvoiceAndContract/test.js",
+		"/home/adam/Desktop/dates.csv",
+		"/etc/nginx/sites-enabled/invisiblecondtitions.ubc.ca",
+		"/etc/nginx/sites-enabled/invisibleconditions.ubc.ca",
+		"/etc/php/7.0/fpm/php.ini",
+		"/etc/nginx/sites-available/invisibleconditions.ubc.ca",
+		"/etc/nginx/sites-available/default",
+		"/etc/hosts",
+		"/home/adam/Documents/javascript/websockets/index.html",
+		"/home/adam/Documents/javascript/websockets/index.js",
+		"/home/adam/Documents/javascript/websockets/index.c",
+		"/home/adam/Documents/javascript/websockets/index.py",
+		"/home/adam/.config/mupen64plus/mupen64plus.cfg",
+		"/home/adam/Documents/haxe/hello_world/project.xml",
+		"/home/adam/Documents/haxe/hello_world/cpp/src/sys/net/Socket.cpp",
+		"/home/adam/Documents/haxe/hello_world/cpp/src/__main__.cpp",
+		"/home/adam/Documents/haxe/hello_world/cpp/src/sys/net/_Socket/SocketInput.cpp",
+		"/home/adam/Documents/haxe/hello_world/python.hxml",
+		"/home/adam/Documents/haxe/hello_world/bin/python/main.py",
+		"/home/adam/Documents/haxe/hello_world/cpp/src/Main.cpp",
+		"/home/adam/Documents/haxe/hello_world/bin/cpp/src/Main.cpp",
+		"/home/adam/Documents/haxe/hello_world/bin/python",
+		"/home/adam/Documents/haxe/hello_world/Makefile",
+		"/home/adam/Documents/haxe/hello_world/cpp.hxml",
+		"/home/adam/Documents/haxe/hello_world/neko.hxml",
+		"/usr/lib/haxe/std/neko/_std/sys/net/Socket.hx",
+		"/home/adam/Documents/haxe/hello_world/compile.hxml",
+		"/home/adam/Documents/haxe/hello_world/cpp/Options.txt",
+		"/home/adam/Documents/haxe/hello_world/Main.hx",
+		"/home/adam/Documents/cpp/raptor/server.hpp",
+		"/home/adam/Documents/cpp/raptor/server.cpp",
+		"/home/adam/Documents/cpp/raptor/connection.hpp",
+		"/home/adam/Documents/cpp/raptor/request_handler.cpp",
+		"/home/adam/Documents/cpp/raptor/request_parser.cpp",
+		"/home/adam/Documents/cpp/raptor/connection.cpp",
+		"/home/adam/Documents/cpp/raptor/request_parser.hpp",
+		"/home/adam/Documents/cpp/raptor/reply.hpp",
+		"/home/adam/Documents/cpp/raptor/reply.cpp",
+		"/home/adam/Documents/Dubsado/app/controllers/alert/index.js",
+		"/home/adam/.ssh/id_rsa",
+		"/home/adam/.ssh/id_rsa.pub",
+		"/home/adam/Documents/cpp/mongo-cxx-driver/src/bsoncxx/test/json.cpp",
+		"/home/adam/Documents/cpp/raptor/request.hpp",
+		"/home/adam/Documents/cpp/raptor/header.hpp",
+		"/home/adam/Documents/cpp/raptor/connection_manager.hpp",
+		"/home/adam/Documents/cpp/raptor/connection_manager.cpp",
+		"/home/adam/Desktop/phantom/rasterize.js",
+		"/home/adam/Documents/cpp/raptor/CMakeLists.txt",
+		"/home/adam/Documents/cpp/conan/raptor/build/conanbuildinfo.cmake",
+		"/home/adam/Documents/cpp/conan/raptor/conanfile.txt",
+		"/home/adam/Documents/cpp/conan/raptor/server.h",
+		"/home/adam/Documents/cpp/conan/raptor/server.cpp",
+		"/home/adam/Documents/cpp/conan/raptor/request_handler.h",
+		"/home/adam/Documents/cpp/conan/raptor/request_handler.cpp",
+		"/home/adam/Documents/cpp/conan/raptor/connection_manager.cpp",
+		"/home/adam/Documents/cpp/conan/raptor/connection.h",
+		"/home/adam/Documents/cpp/conan/raptor/connection.cpp",
+		"/home/adam/Documents/cpp/conan/raptor/connection_manager.h",
+		"/home/adam/Documents/Dubsado/views/partials/form/directive/date-dropdown.jade",
+		"/home/adam/Documents/Dubsado/app/models/Form.js",
+		"/home/adam/Documents/Dubsado/app/controllers/user/index.js",
+		"/home/adam/Documents/Dubsado/app/middleware/errors.js",
+		"/home/adam/Documents/Dubsado/app/vendor/BaseController.js",
+		"/home/adam/Documents/Dubsado/app/controllers/taxItem/index.js",
+		"/home/adam/Documents/Dubsado/app/models/User.js",
+		"/home/adam/Documents/Dubsado/config/config.js",
+		"/home/adam/Documents/Dubsado/views/index.jade",
+		"/home/adam/Documents/Dubsado/js/models/user/user-settings.controller.jade",
+		"/home/adam/Documents/Dubsado/config/mandrill.js",
+		"/home/adam/Documents/Dubsado/config/database.js",
+		"/home/adam/Documents/Dubsado/app/models/Image.js",
+		"/home/adam/Documents/Dubsado/views/partials/form/directive/date-display.jade",
+		"/home/adam/Documents/Dubsado/app/models/WorkflowAction.js",
+		"/home/adam/Documents/Dubsado/app/controllers/form/index.js",
+		"/home/adam/Documents/Dubsado/app/middleware/auth.js",
+		"/home/adam/Documents/Dubsado/server.js",
+		"/home/adam/Documents/Dubsado/.envCOPY",
+		"/home/adam/Documents/Dubsado/app/middleware/auth-check.js",
+		"/home/adam/Documents/angular/simple/public/js/angular.min.js",
+		"/home/adam/Documents/node/meanTut/public/libs/angular/.bower.json",
+		"/home/adam/Documents/node/meanTut/index.js",
+		"/home/adam/Documents/node/meanTut/config/db.js",
+		"/home/adam/Documents/node/meanTut/app/models/nerd.js",
+		"/home/adam/Documents/node/meanTut/.bowerrc",
+		"/home/adam/Documents/node/meanTut/app/routes.js",
+		"/home/adam/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/adam/Documents/node/meanTut/public/views/index.html",
+		"/home/adam/Documents/car_of_day_uploader/output/fbAccessToken.txt",
+		"/home/adam/Documents/car_of_day_uploader/static/index.html",
+		"/home/adam/Documents/car_of_day_uploader/package.json",
+		"/home/adam/Documents/car_of_day_uploader/index.js",
+		"/home/adam/Documents/car_of_day_uploader/output/cars.xml",
+		"/home/adam/Documents/car_of_day_uploader/output/cars.json",
+		"/home/adam/Documents/car_of_day_uploader/output/test.xml",
+		"/home/adam/Documents/car_of_day_uploader/test.js",
+		"/home/adam/Documents/cpp/AutoBahx/src/main.cpp",
+		"/home/adam/Documents/cpp/AutoBahx/src/App.cpp",
+		"/home/adam/Documents/cpp/AutoBahx/include/Controls.h",
+		"/home/adam/Documents/cpp/AutoBahx/include/CarKeyboardControls.h",
+		"/home/adam/Documents/cpp/AutoBahx/include/App.h",
+		"/home/adam/Documents/cpp/AutoBahx/include/BotControls.h",
+		"/home/adam/Documents/cpp/AutoBahx/include/Component.h",
+		"/home/adam/Documents/cpp/AutoBahx/Makefile",
+		"/home/adam/Documents/cpp/AutoBahx/include/Window.h",
+		"/home/adam/Documents/cpp/AutoBahx/src/Window.cpp",
+		"/home/adam/Documents/cpp/AutoBahx/src/BaseApp.cpp",
+		"/home/adam/Documents/cpp/AutoBahx/include/BaseApp.h",
+		"/home/adam/.config/sublime-text-3/Packages/Clang Format/Default (Linux).sublime-keymap",
+		"/home/adam/Documents/cpp/AutoBahx/src/GameObject.cpp",
+		"/home/adam/Documents/cpp/AutoBahx/src/CarRenderer.cpp",
+		"/home/adam/Documents/cpp/AutoBahx/include/CarRenderer.h",
+		"/home/adam/Documents/cpp/AutoBahx/include/Car.h",
+		"/home/adam/Documents/cpp/AutoBahx/src/Car.cpp",
+		"/home/adam/Documents/angular/tutorial/app/app.component.ts",
+		"/home/adam/Documents/angular/tutorial/app/app.module.ts",
+		"/home/adam/Documents/angular/tutorial/package.json",
+		"/home/adam/Documents/angular/tutorial/systemjs.config.js"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			"/home/adam/Documents/haxe/hello_world/bin/cpp/src",
+			"/home/adam/Documents/Dubsado",
+			"/home/adam/Documents/crow",
+			"/home/adam/Documents/crow/include",
+			"/home/adam/Documents/cpp/AutoBahx",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"router",
+			"type:",
+			"signature",
+			"conn3854027",
+			"error",
+			"branch",
+			"git",
+			"paymentScheduleBeta",
+			"paymentSched",
+			"\\n",
+			"accept",
+			"__V",
+			"message:",
+			"585043b45ecce1e93cd16de2",
+			"585042d0e2e9b9fc3ba91b5e",
+			"plan: null",
+			"index",
+			"access",
+			"form",
+			"forward",
+			"frame",
+			"mip",
+			"resolution",
+			"graphic",
+			"rumble",
+			"key",
+			"key(",
+			"button",
+			"print",
+			"cursorId",
+			"cursorId.get",
+			"timeout",
+			"buffer",
+			"cli_addr",
+			"clilen",
+			"argv",
+			"Eof",
+			"socket_recv",
+			"SocketInput_obj",
+			"readBytes",
+			"len",
+			"readAll",
+			"input",
+			"readAll",
+			"read",
+			"input",
+			"read",
+			"readAll",
+			"_hx___s",
+			"_hx_len",
+			"readall",
+			"readBytes",
+			"writeBytes",
+			"writeByes",
+			"writeByts",
+			"+ len",
+			"+len",
+			"python_Boot",
+			"len",
+			"blockingio",
+			"settimeout",
+			"writeString",
+			"readByte",
+			"readBytes",
+			"readAll",
+			"sys_net_Host",
+			"bind",
+			"_hx___init",
+			"sys_net_Socket",
+			"bind",
+			"sys_net_Host",
+			"BlockingIOError",
+			"python_lib_net_Socket",
+			"sys_net__Socket_SocketInput",
+			"_hx___s",
+			"readByte",
+			"readAll",
+			"read",
+			"recv",
+			"haxe_io_Input",
+			"readByte",
+			"readString",
+			"sys_net__Socket_SocketInput",
+			"_hx___s",
+			"python_lib_net_Socket",
+			"socket_select",
+			"select",
+			"polymer",
+			"\\n",
+			"\\t(.*)\\n",
+			"\\[.*\\] \\[.*bower_components/(.*)\\]",
+			"\\[.*\\] \\[.*bower_components/{.*}\\]",
+			"attachments",
+			"email",
+			"file",
+			".txt",
+			"do_write",
+			"socket_",
+			"shared_from_this",
+			"do_await_stop",
+			"LIBBSON_INCLUDE_DIRS",
+			"directo",
+			"include",
+			"myapp",
+			"request_handler",
+			"fallbackMessage",
+			"Edit personal, ",
+			"DB_PROD",
+			"highestNumberInvoice",
+			"user",
+			"authCheckBelowRoutes",
+			"_",
+			"authCheck",
+			"CROW_ENABLE_SSL",
+			"CROW_ENABLE_LOGGING",
+			"mongoose",
+			"api",
+			"Bear",
+			"fbAccessToken",
+			"root",
+			"writeCarsXML",
+			"parser",
+			"h2",
+			"path",
+			"mRunning",
+			"randomPlayer",
+			"add_library",
+			"library"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\", \"",
+			",\\n",
+			"\\n,",
+			"bowerComponentsDir + '$1'\\n",
+			"$1",
+			"raptor",
+			"Car",
+			"label",
+			"autobahx",
+			"CarKeyboardControls",
+			"AddComponent",
+			"GameControllerManager",
+			"Update(",
+			"Render(",
+			"mCar->",
+			"renderer",
+			"horizontalAxis",
+			"cars",
+			"color",
+			"pch"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "invisible_conditions.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "build.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/index.pug",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1868,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1867,
+								1867
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/theme.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								516,
+								516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 384.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"auto_name": "forms",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 336.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Compile",
+	"project": "invisible_conditions.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"botcontrols",
+				"include/BotControls.h"
+			],
+			[
+				"keyb",
+				"src/CarKeyboardController.cpp"
+			],
+			[
+				"keyboa",
+				"include/CarKeyboardControls.h"
+			],
+			[
+				"contr",
+				"include/Controls.h"
+			],
+			[
+				"comp",
+				"include/Component.h"
+			],
+			[
+				"mainc",
+				"AutoBahx/src/main.cpp"
+			],
+			[
+				"android_ma",
+				"AutoBahx/android/jni/SDL/src/main/android/SDL_android_main.c"
+			],
+			[
+				"sdl_android_ma",
+				"AutoBahx/android/jni/SDL/src/main/android/SDL_android_main.c"
+			],
+			[
+				"sdl_in",
+				"AutoBahx/android/jni/SDL/src/SDL_internal.h"
+			],
+			[
+				"carkeyboardcontrols",
+				"AutoBahx/include/CarKeyboardControls.h"
+			],
+			[
+				"gameo",
+				"AutoBahx/include/GameObject.h"
+			],
+			[
+				"carren",
+				"AutoBahx/include/CarRenderer.h"
+			],
+			[
+				"renderer",
+				"AutoBahx/include/Renderer.h"
+			],
+			[
+				"irenderable",
+				"AutoBahx/include/IRenderable.h"
+			],
+			[
+				"iren",
+				"AutoBahx/include/IRenderable.h"
+			],
+			[
+				"carrenderer",
+				"AutoBahx/include/CarRenderer.h"
+			],
+			[
+				"wind",
+				"AutoBahx/src/Window.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 490.0,
+		"last_filter": "sdl",
+		"selected_items":
+		[
+			[
+				"sdl",
+				"SDL_LoadBMP"
+			]
+		],
+		"width": 681.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 169.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems": 
+    [
+    	{
+        	"name": "Compile",
+        	"working_dir": "${project_path}",
+        	"shell_cmd": "${project_path}/build.sh"
+    	}
+    ],
+    "tab_size": 2
+}

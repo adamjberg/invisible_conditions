@@ -1,0 +1,118 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Trenda";
+  src: url("/fonts/trenda-regular.ttf") format("truetype"); }
+body {
+  font-family: 'Trenda'; }
+
+#logo {
+  font-size: 2em;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px; }
+
+h1 {
+  font-size: 2.5em;
+  /* 40px/16=2.5em */ }
+
+h2 {
+  font-size: 1.875em;
+  /* 30px/16=1.875em */ }
+
+h3 {
+  font-size: 1.5em;
+  /* 24px/16=1.5em */ }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+p {
+  margin: 1em 0; }
+
+ul {
+  list-style: circle;
+  margin: 1em; }
+
+header {
+  background-color: #012C39; }
+
+nav {
+  width: 100%;
+  max-width: 960px;
+  display: table;
+  margin: 0 auto;
+  table-layout: fixed; }
+  nav div {
+    display: table-row; }
+    nav div a {
+      display: table-cell;
+      text-align: center;
+      list-style: none;
+      padding: 10px; }
+      nav div a:hover {
+        background-color: #DDD; }
+
+section {
+  padding: 10px 0; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+#about {
+  background-color: #67C8C7; }
+
+#more-info {
+  text-align: center; }
+
+#sponsors {
+  background-color: #E4E583; }
+  #sponsors img {
+    max-width: 100%; }
+  #sponsors table {
+    width: 100%;
+    table-layout: fixed; }
+    #sponsors table td {
+      vertical-align: middle; }
+
+footer {
+  background-color: #EEE;
+  text-align: center;
+  padding: 10px; }
+
+/*# sourceMappingURL=theme.css.map */

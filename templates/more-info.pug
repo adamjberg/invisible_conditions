@@ -1,0 +1,16 @@
+section#more-info
+	.container
+		h2 Interested?
+		p Sign up for more info
+		form(id="more-info-form" action="/api/more-info")
+			.form-group
+				label Email
+				input(name="email" type="email" placeholder="Email")
+			.form-group
+				label I am interested in
+				select(name="interest")
+					option(value="attend") Attending
+					option(value="mentor") Mentoring
+					option(value="volunteer") Volunteering
+					option(value="other") Other
+
