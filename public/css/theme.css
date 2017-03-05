@@ -37,13 +37,14 @@ table {
 body {
   font-family: 'Trenda'; }
 
-#logo {
-  font-size: 2em;
-  font-weight: bold;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 10px; }
+.text-center {
+  text-align: center; }
+
+#logo img {
+  margin-top: 30px; }
+
+.pull-right {
+  float: right; }
 
 h1 {
   font-size: 2.5em;
@@ -68,24 +69,16 @@ ul {
   list-style: circle;
   margin: 1em; }
 
-header {
-  background-color: #012C39; }
-
 nav {
   width: 100%;
-  max-width: 960px;
-  display: table;
-  margin: 0 auto;
-  table-layout: fixed; }
-  nav div {
-    display: table-row; }
-    nav div a {
-      display: table-cell;
-      text-align: center;
-      list-style: none;
-      padding: 10px; }
-      nav div a:hover {
-        background-color: #DDD; }
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  line-height: 3em; }
+  nav .navbar-header {
+    font-weight: bold;
+    font-size: 2em; }
+  nav .navbar-nav a {
+    margin-left: 10px; }
 
 section {
   padding: 10px 0; }
@@ -94,24 +87,15 @@ section {
   max-width: 960px;
   margin: 0 auto; }
 
-#about {
-  background-color: #67C8C7; }
-
-#more-info {
-  text-align: center; }
-
-#sponsors {
-  background-color: #E4E583; }
-  #sponsors img {
-    max-width: 100%; }
-  #sponsors table {
-    width: 100%;
-    table-layout: fixed; }
-    #sponsors table td {
-      vertical-align: middle; }
+#sponsors img {
+  max-width: 100%; }
+#sponsors table {
+  width: 100%;
+  table-layout: fixed; }
+  #sponsors table td {
+    vertical-align: middle; }
 
 footer {
-  background-color: #EEE;
   text-align: center;
   padding: 10px; }
 

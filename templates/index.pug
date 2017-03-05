@@ -5,15 +5,8 @@ html
 		link(rel="stylesheet" href="css/theme.css")
 	body
 		header
-			#logo
-				| Invisible
-				br
-				| Conditions
-			nav
-				div
-					a(href="#about") Conference
-					a(href="#sponsors") Sponsors
-					a(href="#contact-us") Contact Us
+			include nav
+			include logo
 		include about
 		include more-info
 		include sponsors
