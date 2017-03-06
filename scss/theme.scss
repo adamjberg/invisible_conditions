@@ -9,6 +9,8 @@
 
 @import 'about';
 @import 'more-info';
+@import 'sponsors';
+@import 'footer';
 
 
 a {
@@ -27,24 +29,4 @@ ul {
 
 section {
     padding: 10px 0;
-}
-
-#sponsors {
-    img {
-        max-width: 100%;
-    }
-
-    table {
-        width: 100%;
-        table-layout: fixed;
-
-        td {
-            vertical-align: middle;
-        }
-    }
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
 }
