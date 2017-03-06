@@ -1,0 +1,17 @@
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: rgba($light-blue, 0.9);
+    color: white;
+    line-height: 3em;
+    height: 3em;
+    
+    .navbar-header {
+        font-weight: bold;
+    }
+    .navbar-nav {
+        a {
+            margin-left: 10px;
+        }
+    }
+}

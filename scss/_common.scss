@@ -1,0 +1,68 @@
+$screen-xs-max: 768px;
+$screen-sm-max: 992px;
+$screen-md-max: 1200px;
+
+$width-lg: 1170px;
+$width-md: 960px;
+$width-sm: 750px;
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-md {
+    padding: 15px;
+    height: 100%;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0px -15px;
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    &:after {
+        clear: both;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* Small devices (desktops, 768px and up) */
+@media (min-width: $screen-xs-max) { 
+    .container {
+        width: $width-sm;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-sm-max) { 
+    .container {
+        width: $width-md;
+    }
+
+    .col-md {
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: $screen-md-max) { 
+    .container {
+        width: $width-lg;
+    }
+ }

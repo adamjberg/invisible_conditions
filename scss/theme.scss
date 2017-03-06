@@ -1,47 +1,12 @@
 @import 'reset';
+@import 'colors';
+@import 'common';
+@import 'fonts';
 
-$dark-blue: #012C39;
-$blue: #072E4C;
-$light-blue: #67C8C7;
-$red-orange: #F05623;
-$orange: #F5862F;
-$yellow: #E4E583;
-@font-face {
-    font-family: "Trenda";
-    src: url('/fonts/trenda-regular.ttf') format("truetype");
-}
+@import 'nav';
+@import 'logo';
 
-body {
-    font-family: 'Trenda';
-}
-
-.text-center {
-    text-align: center;
-}
-
-#logo {
-    img {
-        margin-top: 30px;
-    }
-}
-
-$width-lg: 960px;
-
-.pull-right {
-    float: right;
-}
-
-h1 {
-    font-size: 2.5em; /* 40px/16=2.5em */
-}
-
-h2 {
-    font-size: 1.875em; /* 30px/16=1.875em */
-}
-
-h3 {
-    font-size: 1.5em; /* 24px/16=1.5em */
-}
+@import 'about';
 
 
 a {
@@ -58,31 +23,8 @@ ul {
     margin: 1em;
 }
 
-nav {
-    width: 100%;
-    position: fixed;
-    background-color: rgba(255,255,255,0.9);
-    line-height: 3em;
-
-    .navbar-header {
-        font-weight: bold;
-        font-size: 2em;
-    }
-
-    .navbar-nav {
-        a {
-            margin-left: 10px;
-        }
-    }
-}
-
 section {
     padding: 10px 0;
-}
-
-.container {
-    max-width: $width-lg;
-    margin: 0 auto;
 }
 
 #sponsors {
@@ -99,8 +41,6 @@ section {
         }
     }
 }
-
-#contact-us {}
 
 footer {
     text-align: center;
