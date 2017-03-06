@@ -1,0 +1,51 @@
+.required:after {
+    content: "*";
+    color: $red-orange;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid $light-blue;
+    }
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 20px;
+  color: white;
+  background-color: $dark-blue;
+  font-weight: bold;
+
+  &:hover, &:active {
+    background-color: $blue;
+  }
+}

@@ -64,6 +64,50 @@ table {
 @media (min-width: 1200px) {
   .container {
     width: 1170px; } }
+.required:after {
+  content: "*";
+  color: #F05623; }
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem; }
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: bold; }
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #C2C2C2;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 7px;
+  outline: none; }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border: 1px solid #67C8C7; }
+
+textarea {
+  resize: none; }
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 20px;
+  color: white;
+  background-color: #012C39;
+  font-weight: bold; }
+  button:hover, button:active {
+    background-color: #072E4C; }
+
 @font-face {
   font-family: "Trenda";
   src: url("/fonts/trenda-regular.ttf") format("truetype"); }
@@ -97,10 +141,11 @@ nav {
 #logo img {
   margin-top: 30px; }
 
-#about .panel-wrapper {
+.panel-wrapper {
   height: 100%;
   width: 100%; }
-#about .panel {
+
+.panel {
   background-color: white;
   box-shadow: 0 1px 2px rgba(43, 59, 93, 0.29);
   padding: 20px;
