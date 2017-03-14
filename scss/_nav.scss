@@ -5,13 +5,15 @@ nav {
     color: white;
     line-height: 3em;
     height: 3em;
-    
     .navbar-header {
         font-weight: bold;
     }
-    .navbar-nav {
-        a {
-            margin-left: 10px;
+    a {
+        display: inline-block;
+        padding: 0 15px;
+
+        &:hover, &:active {
+            background-color: rgba($orange, 0.9);
         }
     }
 }
