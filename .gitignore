@@ -1,4 +1,6 @@
 .sass-cache
 .vscode
 public/css
+public/js
 public/*.html
+node_modules/
