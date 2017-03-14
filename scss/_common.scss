@@ -37,8 +37,16 @@ $width-sm: 750px;
     text-align: center;
 }
 
+.text-danger {
+    color: $red-orange;
+}
+
 .pull-right {
     float: right;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Small devices (desktops, 768px and up) */
