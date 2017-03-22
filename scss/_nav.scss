@@ -1,8 +1,9 @@
 nav {
     width: 100%;
     position: fixed;
-    background-color: rgba($light-blue, 0.9);
-    color: white;
+    background-color: rgba(white, 0.9);
+    color: $dark-blue;
+    font-weight: bold;
     line-height: 3em;
     height: 3em;
     .navbar-header {
