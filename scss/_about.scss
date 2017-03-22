@@ -3,9 +3,18 @@
     width: 100%;
 }
 
+.panel-header,
 .panel {
-    background-color: white;
-    box-shadow: 2px 2px 2px rgba(43, 59, 93, 0.29);
+    border: 2px $dark-blue solid;
+}
+
+.panel-header {
+    text-align: center;
+    border-bottom: 1px $dark-blue solid;
+}
+
+.panel {
     padding: 20px;
     height: 100%;
+    border-top: 1px $dark-blue solid;
 }
