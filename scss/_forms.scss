@@ -11,26 +11,19 @@
 label {
     display: block;
     margin-bottom: .5rem;
-    font-weight: bold;
 }
 
 input,
 select,
 textarea {
     width: 100%;
-    border: 1px solid #C2C2C2;
-    box-shadow: 1px 1px 4px #EBEBEB;
-    -moz-box-shadow: 1px 1px 4px #EBEBEB;
-    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
+    border: 2px solid $dark-blue;
     padding: 7px;
-    outline: none;
-    background: #FFF;
+    background: white;
+    font-size: $font-size-md;
 
     &:focus {
-      border: 1px solid $light-blue;
+      border: 2px solid $blue;
     }
 }
 
@@ -41,10 +34,12 @@ textarea {
 button {
   cursor: pointer;
   border: none;
-  padding: 8px 20px;
+  padding: 8px 40px;
   color: white;
   background-color: $dark-blue;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: $font-size-md;
 
   &:hover, &:active {
     background-color: $blue;

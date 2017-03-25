@@ -1,5 +1,16 @@
 #more-info {
-  #submit-error, #submit-success {
-    font-weight: bold;
-  }
+  background-color: $light-gray;
+
+    p {
+        font-size: 1.25em;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    #submit-error,
+    #submit-success {
+        font-weight: bold;
+    }
 }

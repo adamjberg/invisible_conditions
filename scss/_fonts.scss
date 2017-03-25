@@ -1,6 +1,11 @@
 $font-bold: "Trenda-Black";
 $font-normal: "Trenda";
 
+$font-size-sm: 1em;
+$font-size-md: 1.25em;
+$font-size-lg: 1.5em;
+$font-size-xlg: 1.75em;
+
 @font-face {
     font-family: $font-normal;
     src: url('/fonts/trenda-regular.ttf') format("truetype");
@@ -15,23 +20,18 @@ body {
     font-family: $font-normal;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: $font-normal;
     font-weight: bold;
     margin: 10px 0;
     color: $dark-blue;
-    padding: 10px;
     text-transform: uppercase;
 }
 
 h1 {
-    font-size: 1.75em;
+    font-size: $font-size-xlg;
 }
 
 h2 {
-    font-size: 1.5em;
-}
-
-h3 {
-    font-size: 1.25em;
+    font-size: $font-size-lg;
 }
