@@ -53,6 +53,10 @@ $width-sm: 750px;
     display: none;
 }
 
+.margin-top-20 {
+    margin-top: 20px;
+}
+
 /* Small devices (desktops, 768px and up) */
 @media (min-width: $screen-xs-max) { 
     .container {

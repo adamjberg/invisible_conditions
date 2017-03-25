@@ -1,6 +1,14 @@
 #sponsors {
   background-color: $dark-gray;
 
+  .badge {
+      display: inline-block;
+      background-color: $dark-blue;
+      color: white;
+      font-size: $font-size-md;
+      padding: 10px 20px;
+  }
+
   img {
         max-width: 100%;
     }
@@ -12,6 +20,11 @@
 
         td {
             vertical-align: middle;
+
+            a {
+                display: block;
+                margin-top: 20px;
+            }
         }
     }
 }
