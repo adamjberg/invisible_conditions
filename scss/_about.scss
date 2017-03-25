@@ -1,20 +1,20 @@
+#about {
+    .col-md {
+        margin-top: 20px;
+    }
+}
+
 .panel-wrapper {
     height: 100%;
     width: 100%;
-}
-
-.panel-header,
-.panel {
     border: 2px $dark-blue solid;
 }
 
 .panel-header {
     text-align: center;
-    border-bottom: 1px $dark-blue solid;
+    border-bottom: 2px $dark-blue solid;
 }
 
 .panel {
     padding: 20px;
-    height: 100%;
-    border-top: 1px $dark-blue solid;
 }
