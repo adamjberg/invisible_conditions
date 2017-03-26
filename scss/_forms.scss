@@ -5,7 +5,12 @@
 
 .form-group {
     width: 100%;
-    margin-bottom: 1rem;
+}
+
+@media (min-width: $screen-sm-max) {
+    .form-group {
+        margin-bottom: 1rem;
+    }
 }
 
 label {
@@ -21,36 +26,34 @@ textarea {
     padding: 7px;
     background: white;
     font-size: $font-size-md;
-
     &:focus {
-      border: 2px solid $blue;
+        border: 2px solid $blue;
     }
 }
 
 textarea {
-  resize: none;
+    resize: none;
 }
 
 button {
-  cursor: pointer;
-  border: none;
-  padding: 15px 60px;
-  color: white;
-  background-color: $dark-blue;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: $font-size-md;
-
-  &:hover, &:active {
-    background-color: $blue;
-  }
-
-  &:disabled {
-    background-color: $light-gray;
-    cursor: not-allowed;
-  }
+    cursor: pointer;
+    border: none;
+    padding: 15px 60px;
+    color: white;
+    background-color: $dark-blue;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: $font-size-md;
+    &:hover,
+    &:active {
+        background-color: $blue;
+    }
+    &:disabled {
+        background-color: $light-gray;
+        cursor: not-allowed;
+    }
 }
 
 .error {
-  border: 1px solid $red-orange;
+    border: 1px solid $red-orange;
 }
