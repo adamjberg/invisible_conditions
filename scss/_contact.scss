@@ -7,3 +7,31 @@
     font-family: $font-bold;
   }
 }
+
+#social-buttons {
+  text-align: center;
+}
+
+.facebook, .twitter, .instagram {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 20px;
+  background-size: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook {
+  background-color: $blue;
+  background-image: url('/img/fb.png');
+}
+
+.twitter {
+  background-color: $light-blue;
+}
+
+.instagram {
+  background-color: $orange;
+  background-image: url('/img/ig-logo.svg');
+}
