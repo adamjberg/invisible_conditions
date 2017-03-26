@@ -5,16 +5,28 @@ nav {
     color: $dark-blue;
     font-weight: bold;
     line-height: 3em;
-    height: 3em;
-    .navbar-header {
-        font-weight: bold;
+    text-align: center;
+    .navbar-brand {
+        display: block;
+        padding: 10px 0;
     }
-    a {
-        display: inline-block;
-        padding: 0 15px;
+    .navbar-nav {
+        display: none;
+        a {
+            display: inline-block;
+            padding: 10px 15px;
+        }
+    }
+}
 
-        &:hover, &:active {
-            background-color: rgba($orange, 0.9);
+@media (min-width: $screen-xs-max) {
+    nav {
+        text-align: inherit;
+        .navbar-brand {
+            display: inline-block;
+        }
+        .navbar-nav {
+            display: block;
         }
     }
 }
