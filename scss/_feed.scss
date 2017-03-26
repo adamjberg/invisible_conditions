@@ -1,10 +1,14 @@
 #instafeed {
     .col-md {
-        vertical-align: middle;
+        text-align: center;
     }
     a {
+        width:100%;
+        display: inline-block;
+
         img {
-            width: 100%;
+            width: auto;
+            max-height: 300px;
         }
     }
 }
