@@ -1,11 +1,12 @@
 #banner {
     text-align: center;
-    .carousel {}
-    #banner1 {
-        background: url("/img/header3.jpg");
+
+    #carousel {
+        background-image: url("/img/banner1.jpg");
         background-size: cover;
         background-position: top;
         height: 800px;
+
         img {
           max-height: 600px;
           max-width: 100%;
@@ -13,5 +14,7 @@
           width: auto;
           vertical-align: middle;
         }
+
+        transition: 3s;
     }
 }
