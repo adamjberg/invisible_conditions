@@ -1,7 +1,7 @@
 $(document).ready(function () {
    var carousel = $('#carousel');
 
-   var images = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg"];
+   var images = ["img/banner1.jpeg", "img/banner2.jpeg", "img/banner3.jpeg"];
    var imageIndex = 0;
 
    setTimeout(cycle, 6000);
