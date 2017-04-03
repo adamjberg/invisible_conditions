@@ -1,4 +1,5 @@
-$font-bold: "Trenda-Black";
+$font-black: "Trenda-Black";
+$font-bold: "Trenda-Bold";
 $font-normal: "Trenda";
 
 $font-size-sm: 1em;
@@ -12,8 +13,13 @@ $font-size-xlg: 1.75em;
 }
 
 @font-face {
-    font-family: $font-bold;
+    font-family: $font-black;
     src: url('/fonts/trenda-black.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: $font-bold;
+    src: url('/fonts/trenda-bold.ttf') format("truetype");
 }
 
 body {
@@ -21,8 +27,7 @@ body {
 }
 
 h1, h2 {
-    font-family: $font-normal;
-    font-weight: bold;
+    font-family: $font-bold;
     margin: 10px 0;
     color: $dark-blue;
     text-transform: uppercase;
@@ -39,4 +44,5 @@ h2 {
 p {
     margin: 10px 0;
     font-size: $font-size-md;
+    line-height: 1.2em;
 }

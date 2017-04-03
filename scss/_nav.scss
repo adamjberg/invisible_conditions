@@ -1,22 +1,25 @@
-$nav-height: 69px;
+$nav-height: 65px;
 
 nav {
     width: 100%;
     position: fixed;
     background-color: rgba(white, 0.9);
     color: $dark-blue;
-    font-weight: bold;
+    font-family: $font-bold;
+    font-size: $font-size-md;
     line-height: 3em;
     text-align: center;
+    height: $nav-height;
+
     .navbar-brand {
         display: block;
-        padding: 10px 0;
     }
     .navbar-nav {
         display: none;
         a {
             display: inline-block;
-            padding: 10px 15px;
+            padding: 0px 15px;
+            line-height: $nav-height;
 
             &:hover, &:active {
                 color: $orange;

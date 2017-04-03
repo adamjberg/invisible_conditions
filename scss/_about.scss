@@ -7,6 +7,10 @@
 .panel-header {
     text-align: center;
     border-bottom: 2px $dark-blue solid;
+
+    h1 {
+        margin: 20px;
+    }
 }
 
 .panel {
