@@ -1,0 +1,116 @@
+style(type="text/css").
+  @font-face {
+    font-family: "Trenda";
+    src: url('/fonts/trenda-regular.ttf') format("truetype");
+  }
+  @font-face {
+    font-family: "Trenda-Bold";
+    src: url('/fonts/trenda-bold.ttf') format("truetype");
+  }
+  @font-face {
+    font-family: "Trenda-Black";
+    src: url('/fonts/trenda-black.ttf') format("truetype");
+  }
+  #logo {
+    padding: 20px;
+    max-width: 180px
+  }
+  body {
+    font-family: "Trenda";
+    font-size: 1.2em;
+  }
+  h1 {
+    font-size: 1.35em;
+    color: #012C39;
+  }
+  .center {
+    text-align: center;
+  }
+  .text-blue {
+    color: #012C39;
+  }
+  img {
+    width: 100%;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #012C39;
+    margin-top: 30px;
+    width: 600px;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .container2 {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .bold {
+    font-family: "Trenda-Black";
+    font-weight: bold;
+    color: #012C39;
+  }
+  #site {
+    color: #67C8C7;
+  }
+  #email {
+    color: #F5862F;
+  }
+  a {
+    text-decoration: none;
+    font-family: "Trenda-Black";
+    font-weight: bold;
+  }
+  .facebook, .twitter, .instagram {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 10px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .facebook {
+    background-color: #072E4C;
+    background-image: url('/img/fb.png');
+  }
+  .instagram {
+    background-color: #F5862F;
+    background-image: url('/img/ig-logo.svg');
+  }
+  
+body
+  .container
+    .center
+      img#logo(src="/img/logo-nav.png")
+    .center
+      img(src="/img/ICC_MentorEmailHeader.jpg")  
+    hr
+  .container2
+    h1 Dear Future ICC Mentors,
+    p.bold Are you a UBC Student with IBD (e.g., Crohn's or Colitis)?
+    p Would you like to share your experiences with youth who are dealing with these illnesses? Are you interested in gaining mentorship and leadership experience?
+    p The 
+      i Invisible Conditions Conference (ICC)
+      |  aims to bring UBC students and youth (ages 12-18) with IBD together in a safe space to share their experiences and support each other. Having successfully navigated both high school and the healthcare system, you have valuable advice and support to offer teenagers. As a mentor at ICC, you would have the opportunity to become involved in your community, gain leadership and mentorship experience, and form lasting relationships with others who are dealing with an invisible illness.
+    p To mentor you must be available for the day of the conference,
+      span.bold  Saturday, June 24th, 2017
+      |  to be held at the UBC Vancouver campus in Ponderosa Commons. You must also be available for a 
+      span.bold training session
+      |  that will take place in 
+      span.bold mid-May
+      | . Other than this, the time you commit to this project is up to you! Our goal is to foster lasting relationships between mentors and participants. We encourage you to be there for your mentees to the best extent that you can manage. And, if you are interested in assisting with the conference planning, we’d welcome your help there too!
+    p For more information or to apply to be a mentor, please visit 
+      a#site(href="https://invisibleconditions.ca") https://invisibleconditions.ca
+      |  or, feel free to contact us directly at 
+      a#email(href="mailto:info@invisibleconditions.ca") info@invisibleconditions.ca
+    p We look forward to hearing from you soon!
+    p Best,
+    .text-blue(style="font-size: 1.15em; font-weight: bold;") Simon Lisaingo and Adam Huizinga
+    i.text-blue(style="font-size: 1.1em;") ICC Coordinators
+    hr
+    .center
+      a.facebook(href="https://www.facebook.com/InvisibleConditionsConference/")
+      a.instagram(href="https://www.instagram.com/invisibleconditions/")
