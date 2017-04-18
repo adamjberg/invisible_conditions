@@ -1,23 +1,32 @@
+- var baseURL = "https://www.invisibleconditions.ca";
+- var fontsURL = baseURL + "/fonts/";
+
 style(type="text/css").
   @font-face {
-    font-family: "Trenda";
-    src: url('/fonts/trenda-regular.ttf') format("truetype");
+    font-family: 'Trenda-Regular';
+    src: url('#{fontsURL}trenda-regular.eot');
+    src: url('#{fontsURL}trenda-regular.eot?#iefix') format('embedded-opentype'),
+        url('#{fontsURL}trenda-regular.woff2') format('woff2'),
+        url('#{fontsURL}trenda-regular.woff') format('woff'),
+        url('#{fontsURL}trenda-regular.ttf') format('truetype'),
+        url('#{fontsURL}trenda-regular.svg#youworkforthem') format('svg');
+    font-weight: normal;
+    font-style: normal;
   }
   @font-face {
-    font-family: "Trenda-Bold";
-    src: url('/fonts/trenda-bold.ttf') format("truetype");
-  }
-  @font-face {
-    font-family: "Trenda-Black";
-    src: url('/fonts/trenda-black.ttf') format("truetype");
+    font-family: 'Trenda-Black';
+    src: url('#{fontsURL}trenda-black.eot');
+    src: url('#{fontsURL}trenda-black.eot?#iefix') format('embedded-opentype'),
+        url('#{fontsURL}trenda-black.woff2') format('woff2'),
+        url('#{fontsURL}trenda-black.woff') format('woff'),
+        url('#{fontsURL}trenda-black.ttf') format('truetype'),
+        url('#{fontsURL}trenda-black.svg#youworkforthem') format('svg');
+    font-weight: normal;
+    font-style: normal;
   }
   #logo {
     padding: 20px;
     max-width: 180px
-  }
-  body {
-    font-family: "Trenda";
-    font-size: 1.2em;
   }
   h1 {
     font-size: 1.35em;
@@ -46,9 +55,11 @@ style(type="text/css").
   .container2 {
     max-width: 580px;
     margin: 0 auto;
+    font-family: "Trenda-Regular", "Arial";
+    font-size: 1.2em;
   }
   .bold {
-    font-family: "Trenda-Black";
+    font-family: "Trenda-Black", "Arial Black";
     font-weight: bold;
     color: #012C39;
   }
@@ -74,19 +85,19 @@ style(type="text/css").
   }
   .facebook {
     background-color: #072E4C;
-    background-image: url('/img/fb.png');
+    background-image: url('#{baseURL}/img/fb.png');
   }
   .instagram {
     background-color: #F5862F;
-    background-image: url('/img/ig-logo.svg');
+    background-image: url('#{baseURL}/img/ig-logo.svg');
   }
   
 body
   .container
     .center
-      img#logo(src="/img/logo-nav.png")
+      img#logo(src="#{baseURL}/img/logo-nav.png")
     .center
-      img(src="/img/ICC_MentorEmailHeader.jpg")  
+      img(src="#{baseURL}/img/ICC_MentorEmailHeader.jpg")  
     hr
   .container2
     h1 Dear Future ICC Mentors,
