@@ -1,5 +1,4 @@
-- var baseURL = "https://www.invisibleconditions.ca";
-- var fontsURL = baseURL + "/fonts/";
+- var fontsURL = "/fonts/";
 
 style(type="text/css").
   @font-face {
@@ -85,19 +84,20 @@ style(type="text/css").
   }
   .facebook {
     background-color: #072E4C;
-    background-image: url('#{baseURL}/img/fb.png');
+    background-image: url('/img/fb.png');
   }
   .instagram {
     background-color: #F5862F;
-    background-image: url('#{baseURL}/img/ig-logo.svg');
+    background-image: url('/img/ig-logo.svg');
   }
   
 body
   .container
     .center
-      img#logo(src="#{baseURL}/img/logo-nav.png")
+      a(href="/")
+        img#logo(src="/img/logo-nav.png")
     .center
-      img(src="#{baseURL}/img/ICC_MentorEmailHeader.jpg")  
+      img(src="/img/ICC_MentorEmailHeader.jpg")  
     hr
   .container2
     h1 Dear Future ICC Mentors,
