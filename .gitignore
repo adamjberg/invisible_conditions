@@ -4,3 +4,6 @@ public/css
 public/js
 public/*.html
 node_modules/
+.env
+db.sqlite3
+*.pyc

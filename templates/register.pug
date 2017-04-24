@@ -11,41 +11,41 @@ html
     link(rel="stylesheet" href="css/theme.css")
   body
     .container
-      center
+      .text-center
         img(src="img/logo-nav.png" height="72px" width="auto" alt="Invisible Conditions")
       #mentor
         p Thank you for your interest in becoming a mentor for the Invisible Conditions Conference. To be a mentor you must be available for the day of the conference, Saturday, June 24th, 2017 to be held at the UBC Vancouver campus in Ponderosa Commons. You must also be available for a training session that will take place in mid-May and complete a criminal record check.  Other than this, the time you commit to this project is up to you! How and how often mentors and mentees stay in touch (i.e. emails, texts, in person meetups) will be up to each mentor-mentee pair.
         p To participate as a mentor, please answer the following questions and complete the mentor-mentee matching questionnaire. These questions are designed to help us tailor your experience as a mentor to optimize your benefits. Your answers will be kept confidential. 
         p Please note that at this time, during our pilot year, only UBC Students are eligible to be mentors.
-      form
+      form(action="http://localhost:8000/register" method="post")
         fieldset
           legend Personal Information
           .row
             .col-md
               .form-group
                 label First Name
-                input
+                input(name="first_name")
             .col-md
               .form-group
                 label Last Name
-                input
+                input(name="last_name")
           .row
             .col-md
               .form-group
                 label Gender
-                select
+                select(name="gender")
                   option Male
                   option Female
                   option Prefer not to say
             .col-md
               .form-group
                 label I identify as
-                input
+                input(name="gender_identity")
           .row
             .col-md
               .form-group
                 label Birthdate
-                input(type="date")
+                input(name="birthdate" type="date")
             .col-md
               .form-group
                 label Are you a UBC Student?
@@ -59,56 +59,56 @@ html
             .col-md
               .form-group
                 label Phone Number
-                input(type="tel")
+                input(name="phone" type="tel")
             .col-md
               .form-group
                 label E-mail
-                input(type="email")
+                input(name="email" type="email")
           .row
             .col-md
               .form-group
                 label How do you want to be contacted?
-                select
+                select(name="contact_pref")
                   option Phone
                   option E-mail
           .row
             .col-md
               .form-group
                 label Street or Mailing Address
-                input
+                input(name="address")
             .col-md
               .form-group
                 label Appt. or Unit #
-                input
+                input(name="unit_number")
           .row
             .col-md
               .form-group
                 label City
-                input
+                input(name="city")
             .col-md
               .form-group
                 label Postal Code
-                input
+                input(name="postal_code")
         fieldset
           legend Emergency Contact
             .row
               .col-md
                 .form-group
                   label First Name
-                  input
+                  input(name="emergency_contact_first")
               .col-md
                 .form-group
                   label Last Name
-                  input
+                  input(name="emergency_contact_last")
             .row
               .col-md
                 .form-group
                   label Phone Number
-                  input(type="tel")
+                  input(name="emergency_contact_phone" type="tel")
               .col-md
                 .form-group
                   label E-mail
-                  input(type="email")
+                  input(name="emergency_contact_email" type="email")
         fieldset
           legend Special Considerations
           p Please let us know how we can make your experience more comfortable in the following areas:
@@ -116,17 +116,17 @@ html
             .col-md
               .form-group
                 label Accessibility
-                textarea
+                textarea(name="accessibility")
           .row
             .col-md
               .form-group
                 label Allergies
-                textarea
+                textarea(name="allergies")
           .row
             .col-md
               .form-group
                 label Other
-                textarea
+                textarea(name="special_other")
         fieldset
           legend Lunch
           .row
@@ -155,10 +155,10 @@ html
           .row
             .col-md
               .form-group
-                input(type="radio" name="research-interest" id="research-interest-yes")
+                input(type="radio" name="research_interest" id="research-interest-yes")
                 label(for="research-interest-yes") Yes, I am interested (signed consent will be collected at the conference).
               .form-group
-                input(type="radio" name="research-interest" id="research-interest-no")
+                input(type="radio" name="research_interest" id="research-interest-no")
                 label(for="research-interest-no") No, I am not interested
         fieldset
           legend Mentorship Interest
@@ -308,3 +308,5 @@ html
           .form-group
             label If there is anything else you would like to tell us about yourself, or your preferences (medical, personal etc.) please use this space to do so:
             textarea(rows=4)
+        .text-center
+          button(type="submit") Register    
