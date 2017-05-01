@@ -5,17 +5,13 @@
 
 .form-group {
     width: 100%;
-}
-
-@media (min-width: $screen-sm-max) {
-    .form-group {
-        margin-bottom: 1rem;
-    }
+    margin-bottom: 1rem;
 }
 
 label {
     margin-bottom: .5rem;
     font-size: $font-size-md;
+    display: inline-block;
 }
 
 input,
@@ -48,6 +44,7 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     font-size: $font-size-md;
+
     &:hover,
     &:active {
         background-color: $blue;
@@ -55,6 +52,19 @@ button {
     &:disabled {
         background-color: $light-gray;
         cursor: not-allowed;
+    }
+}
+
+fieldset {
+    border: 2px solid $blue;
+    padding: 20px;
+    margin: 20px 0;
+
+    legend {
+        font-size: $font-size-lg;
+        font-family: $font-bold;
+        padding: 0 10px;
+        color: $orange;
     }
 }
 

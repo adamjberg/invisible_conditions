@@ -12,7 +12,6 @@ $width-sm: 750px;
 
 .col-md {
     height: 100%;
-    margin-bottom: 20px;
 }
 
 .container {
@@ -39,6 +38,10 @@ img {
 
 table {
     width: 100%;
+}
+
+.inline {
+    display: inline;
 }
 
 .container {
@@ -91,7 +94,6 @@ table {
     }
     .col-md {
         display: table-cell;
-        vertical-align: middle;
         padding: 0px 10px;
     }
 }

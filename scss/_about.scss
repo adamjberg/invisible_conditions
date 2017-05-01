@@ -1,25 +1,26 @@
-.panel-wrapper {
-    height: 100%;
-    width: 100%;
-    border: 2px $dark-blue solid;
-}
-
-.panel-header {
-    text-align: center;
-    border-bottom: 2px $dark-blue solid;
-
-    h1 {
-        margin: 20px;
-    }
-}
-
-.panel {
-    padding: 20px;
-}
-
 #about {
     img {
         max-height: 100px;
         margin-top: 20px;
+    }
+    .col-md {
+        margin-bottom: 20px;
+        vertical-align: middle;
+    }
+
+    .panel-wrapper {
+        height: 100%;
+        width: 100%;
+        border: 2px $dark-blue solid;
+    }
+    .panel-header {
+        text-align: center;
+        border-bottom: 2px $dark-blue solid;
+        h1 {
+            margin: 20px;
+        }
+    }
+    .panel {
+        padding: 20px;
     }
 }
