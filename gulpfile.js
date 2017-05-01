@@ -5,7 +5,7 @@ var concat = require('gulp-concat');
 var pug = require('gulp-pug');
 
 gulp.task('html', function () {
-    return gulp.src('templates/*.pug')
+    return gulp.src('templates/**/*.pug')
         .pipe(pug({
             // Your options in here. 
         }))

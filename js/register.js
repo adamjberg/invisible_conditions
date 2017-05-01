@@ -1,26 +1,26 @@
-/*$(document).ready(function () {
-    var registerForm = $('#register-form');
-    var submitButton = registerForm.find('button');
+$(document).ready(function () {
+  var studentStatusSelect = $('#student-status select');
+  var submitButton = $('button');
 
-    submitButton.click(function (event) {
-        event.preventDefault();
+  studentStatusSelect.change(checkStudentStatus);
 
-        var actionURL = registerForm.attr("action");
-        var registrationData = registerForm.serialize();
+  var mentorshipInterest = $('#mentorship-interest input');
+  mentorshipInterest.change(mentorshipInterestChanged);
+  var mentorMatch = $('#mentor-match');
 
-        $.ajax({
-            type: "post",
-            url: "register.php",
-            data: registrationData,
-            cache: false,
-            dataType: 'json',
-            contentType: "application/json; charset=utf-8",
-            error: function (err) {
-                console.error(err);
-            },
-            success: function (data) {
-                console.log(data);
-            }
-        });
-    });
-});*/
+
+  function checkStudentStatus() {
+    var isStudent = studentStatusSelect.val() === "Yes";
+    submitButton.prop('disabled', !isStudent);
+    var errorText = $('#student-status .text-danger');
+    errorText.toggleClass('hidden', isStudent);
+  }
+
+  function mentorshipInterestChanged(event) {
+    var input = $(event.target);
+    var isInterested = input.val() === "yes" && input.is(":checked");
+    
+    mentorMatch.toggleClass('hidden', !isInterested);
+  }
+
+});
