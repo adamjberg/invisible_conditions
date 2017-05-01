@@ -29,5 +29,12 @@ gulp.task('js', function () {
     .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('default', ['html', 'sass', 'js']);
+gulp.task('php', function() {
+    gulp.src([
+        'server/registration/*.php'
+    ])
+    .pipe(gulp.dest('public'));
+})
+
+gulp.task('default', ['html', 'sass', 'js', 'php']);
 
