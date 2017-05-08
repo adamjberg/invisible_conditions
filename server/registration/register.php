@@ -9,8 +9,6 @@ include 'fields.php';
 
 $post = $_POST;
 
-echo(count($post));
-
 $values = array();
 $errors = array();
 
