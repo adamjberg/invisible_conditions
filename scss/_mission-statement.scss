@@ -6,7 +6,8 @@
   color: $light-blue;
   text-align: center;
   font-family: $font-black;
-  margin-top: 50px;
+  margin: 50px 0;
+  overflow: hidden;
 
   .highlight {
     color: $orange;

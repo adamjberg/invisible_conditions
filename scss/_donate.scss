@@ -1,11 +1,8 @@
 #donate {
-    .flex {
-        display: flex;
-        flex: 1;
-        margin: 0 -15px;
+    .panel:first-child {
+        flex: 2 1 0;
     }
-
-    .panel {
-      margin: 0 15px;
+    button {
+      background-color: $light-blue;
     }
 }

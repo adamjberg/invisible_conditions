@@ -6,11 +6,15 @@ html
     link(rel="stylesheet" href="css/theme.css")
     script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
     script(src="js/app.js")
-  body
+  body#support-us
     header
       include nav
     include banner
-    include mission-statement
+    .container
+      #mission-statement
+        span WE NEED
+        span.highlight  YOUR SUPPORT
+        span &nbsp; TO MAKE THIS CONFERENCE THE BEST IT CAN BE.
     include donate
     include support
     include contact

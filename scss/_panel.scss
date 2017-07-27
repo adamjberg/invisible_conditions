@@ -1,5 +1,7 @@
 .panel {
     border: 2px $dark-blue solid;
+    margin: 0 10px;
+    flex: 1 1 0;
     .panel-header {
         text-align: center;
         border-bottom: 2px $dark-blue solid;
@@ -7,4 +9,14 @@
     .panel-body {
         padding: 20px;
     }
+    @media (max-width: $screen-sm-max) {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.panel-group {
+    display: flex;
+    margin: 0 -15px;
+    flex-flow: row wrap;
 }
