@@ -1,0 +1,10 @@
+.panel {
+    border: 2px $dark-blue solid;
+    .panel-header {
+        text-align: center;
+        border-bottom: 2px $dark-blue solid;
+    }
+    .panel-body {
+        padding: 20px;
+    }
+}
