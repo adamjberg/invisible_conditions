@@ -1,20 +1,25 @@
 #banner {
     text-align: center;
-
     #carousel {
         background-image: url("/img/banner1.jpeg");
         background-size: cover;
         background-position: top;
         height: 800px;
-
         img {
-          max-height: 600px;
-          max-width: 100%;
-          margin: 100px 0;
-          width: auto;
-          vertical-align: middle;
+            max-height: 600px;
+            max-width: 100%;
+            margin: 100px 0;
+            width: auto;
+            vertical-align: middle;
         }
-
+        h1 {
+            text-transform: uppercase;
+            color: white;
+            font-size: 4em;
+            display: table-cell;
+            vertical-align: middle;
+            height: 800px;
+        }
         transition: 3s;
     }
 }
