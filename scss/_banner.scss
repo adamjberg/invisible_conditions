@@ -20,6 +20,11 @@
             vertical-align: middle;
             height: 800px;
         }
+        @media (max-width: $screen-xs-max) {
+            h1 {
+                font-size: 2em;
+            }
+        }
         transition: 3s;
     }
 }
