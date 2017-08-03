@@ -1,5 +1,27 @@
 #become-a-sponsor {
-  .panel:first-child {
-    flex: 2 1 0;
-  }
+    background: $light-gray;
+    .panel:first-child {
+        flex: 2 1 0;
+    }
+    button {
+        background: $orange;
+    }
+    .together {
+        color: $orange;
+    }
+    ul {
+        margin-left: 40px;
+        list-style: square;
+        li {
+            p {
+                color: initial;
+            }
+            &:nth-child(odd) {
+                color: $orange;
+            }
+            &:nth-child(even) {
+                color: $light-blue;
+            }
+        }
+    }
 }
