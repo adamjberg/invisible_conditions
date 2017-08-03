@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     if (parts.length > 1) {
       var targetSelector = parts[1];
-      if (!targetSelector || $(targetSelector).length) {
+      if (!targetSelector || $("#" + targetSelector).length) {
         event.preventDefault();
 
         var targetTop = 0;
