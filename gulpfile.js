@@ -43,6 +43,10 @@ gulp.task('js', function () {
     .pipe(gulp.dest('public/js'));
 });
 
+gulp.task('js:w', function () {
+  return gulp.watch('js/*.js', ['js']);
+});
+
 gulp.task('php', function () {
   gulp.src([
     'server/registration/*.php'
