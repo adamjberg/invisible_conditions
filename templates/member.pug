@@ -1,8 +1,9 @@
-.member
-  .bubble 
-    img(src='/img/BubbleOrange.svg')
-    .first Adam&nbsp;
-    .last Berg
-  .title Chair / Funding & Outreach
-  .quote He hopes this conference will allow him to give back some of the life lessons he has learnt along his journey
-  button Learn more about Adam
+mixin member(member)
+  .member
+    .bubble 
+      img(src='/img/BubbleOrange.svg')
+      .first= member.first
+      .last= member.last
+    .title= member.title
+    .quote= member.quote
+    button Learn more about #{member.first}

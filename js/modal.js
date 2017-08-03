@@ -1,7 +1,7 @@
 var modalService = {};
 
 $(document).ready(function () {
-  modalService.open = open;
+  modalService.setIndex = setIndex;
 
   var modal = $('#modal');
   var dialog = modal.find('#modal-dialog');
@@ -27,11 +27,11 @@ $(document).ready(function () {
 
   modal.find('.close').click(close);
 
-  var prevButton = modal.find('.next');
-  prevButton.click(next);
+  var prevButton = modal.find('.prev');
+  prevButton.click(prev);
 
-  var nextButton = modal.find('.prev');
-  nextButton.click(prev);
+  var nextButton = modal.find('.next');
+  nextButton.click(next);
 
   var index = 0;
 
@@ -61,8 +61,8 @@ $(document).ready(function () {
     if (newIndex >= 0 && newIndex < members.length) {
       index = newIndex;
       open(index);
-      prevButton.toggleClass('hidden', newIndex !== 0);
-      nextButton.toggleClass('hidden', newIndex !== members.length - 1);
+      prevButton.toggleClass('hidden', newIndex === 0);
+      nextButton.toggleClass('hidden', newIndex === members.length - 1);
     }
   }
 })

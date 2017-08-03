@@ -8,16 +8,18 @@ $(document).ready(function () {
     var parts = full_url.split("#");
 
     if (parts.length > 1) {
-      event.preventDefault();
       var targetSelector = parts[1];
+      if (!targetSelector || $(targetSelector).length) {
+        event.preventDefault();
 
-      var targetTop = 0;
-      if (targetSelector) {
-        targetTop = $("#" + targetSelector).offset().top;
-        targetTop -= nav.height();
+        var targetTop = 0;
+        if (targetSelector) {
+          targetTop = $("#" + targetSelector).offset().top;
+          targetTop -= nav.height();
+        }
+
+        htmlBody.animate({ scrollTop: targetTop }, 'slow');
       }
-
-      htmlBody.animate({ scrollTop: targetTop }, 'slow');
     }
 
   });

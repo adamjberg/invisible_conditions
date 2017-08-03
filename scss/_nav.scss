@@ -10,6 +10,7 @@ nav {
     line-height: 3em;
     text-align: center;
     height: $nav-height;
+    z-index: 1;
 
     .navbar-brand {
         display: block;
