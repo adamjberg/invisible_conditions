@@ -1,8 +1,21 @@
+var modalService = {};
+
 $(document).ready(function () {
+  modalService.open = open;
+
   var modal = $('#modal');
+  var dialog = modal.find('#modal-dialog');
+
+  dialog.click(function (e) {
+    e.stopPropagation();
+  });
+  modal.click(close);
 
   $('body').keydown(function (e) {
     switch ((e.keyCode ? e.keyCode : e.which)) {
+      case 27: // ESC
+        close();
+        break;
       case 37:   // Left Arrow
         prev();
         break;
@@ -20,12 +33,10 @@ $(document).ready(function () {
   var nextButton = modal.find('.prev');
   nextButton.click(prev);
 
-  modal.toggleClass('hidden', false);
-
   var index = 0;
-  setIndex(0);
 
-  function open(member) {
+  function open(index) {
+    var member = members[index];
     modal.toggleClass('hidden', false);
     modal.find('.first').text(member.first);
     modal.find('.last').text(member.last);
@@ -49,8 +60,7 @@ $(document).ready(function () {
   function setIndex(newIndex) {
     if (newIndex >= 0 && newIndex < members.length) {
       index = newIndex;
-      var member = members[index];
-      open(member);
+      open(index);
       prevButton.toggleClass('hidden', newIndex !== 0);
       nextButton.toggleClass('hidden', newIndex !== members.length - 1);
     }
