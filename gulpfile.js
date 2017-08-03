@@ -8,7 +8,8 @@ gulp.task('html', function () {
   return gulp.src([
     'templates/index.pug',
     'templates/be-a-mentor.pug',
-    'templates/support-us.pug'
+    'templates/support-us.pug',
+    'templates/team.pug'
   ])
     .pipe(pug({
       // Your options in here. 
@@ -22,6 +23,10 @@ gulp.task('sass', function () {
     .pipe(sass())
     .pipe(sourcemaps.write()) // Add the map to modified source.
     .pipe(gulp.dest('public/css'));
+});
+
+gulp.task('sass:w', function () {
+  return gulp.watch('scss/*.scss', ['sass']);
 });
 
 gulp.task('js', function () {

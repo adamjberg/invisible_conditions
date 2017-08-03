@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Invisible Conditions Conference | Meet the Team
+    link(rel="stylesheet" href="css/theme.css?version=1")
+    script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+    script(src="js/app.js?version=1")
+  body#team
+    header
+      include nav
+    #banner
+      #carousel
+        .container
+          h1 OUR TEAM IS A GROUP OF YOUNG ADULTS LOOKING TO MAKE A DIFFERENCE.
+    .container
+      #mission-statement
+        span.highlight OUR TEAM &nbsp;
+        span IS DEDICATED TO IMPROVING THE LIVES OF YOUTH WITH &nbsp;
+        span.highlight INVISIBLE CONDITIONS.
+      .panel-group
+        .panel.text-center
+          h1 Our Executive Team
+      #members
+        include member
+        include member
+        include member
+        include member
+    include contact
+    include feed
+    include footer

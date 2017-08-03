@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
   var carousel = $('#carousel');
 
   var images = ["img/banner1.jpeg", "img/ComputerSignUp_Header.jpeg", "img/banner2.jpeg", "img/banner3.jpeg"];
@@ -27,4 +27,4 @@ $(document).ready(function () {
 
     setTimeout(cycle, 5000);
   }
-});
+});*/
