@@ -4,18 +4,21 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var pug = require('gulp-pug');
 
+const pugFiles = [
+  'templates/**/*.pug'
+]
+
 gulp.task('html', function () {
-  return gulp.src([
-    'templates/index.pug',
-    'templates/be-a-mentor.pug',
-    'templates/support-us.pug',
-    'templates/team.pug'
-  ])
+  return gulp.src(pugFiles)
     .pipe(pug({
       // Your options in here. 
     }))
     .pipe(gulp.dest('public'));
 });
+
+gulp.task('html:w', function () {
+  return gulp.watch(pugFiles, ['html']);
+})
 
 gulp.task('sass', function () {
   return gulp.src('scss/**/*.scss')
@@ -33,13 +36,8 @@ gulp.task('js', function () {
   gulp.src([
     'node_modules/instafeed.js/instafeed.min.js',
     'js/**/*.js',
-    '!js/register.js'
   ])
     .pipe(concat('app.js'))
-    .pipe(gulp.dest('public/js'));
-
-  gulp.src(['js/register.js'])
-    .pipe(concat('register.js'))
     .pipe(gulp.dest('public/js'));
 });
 
@@ -52,7 +50,11 @@ gulp.task('php', function () {
     'server/registration/*.php'
   ])
     .pipe(gulp.dest('public'));
-})
+});
 
-gulp.task('default', ['html', 'sass', 'js', 'php']);
+gulp.task('php:w', function () {
+  return gulp.watch('server/registration/*.php', ['php'])
+});
+
+gulp.task('default', ['html', 'sass', 'js', 'php', 'html:w', 'sass:w', 'js:w', 'php:w']);
 
