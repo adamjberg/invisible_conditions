@@ -9,4 +9,4 @@ node_modules/
 .env
 db.sqlite3
 *.pyc
-server/registration/db.php
+server/registration/env.php

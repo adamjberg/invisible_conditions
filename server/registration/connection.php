@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'env.php';
 
 $connection = new mysqli($servername, $username, $password, $db);
 
