@@ -23,6 +23,13 @@ nav {
             line-height: $nav-height;
         }
     }
+
+    #register {
+      color: $dark-orange;
+      &:hover {
+        color: $orange;
+      }
+    }
 }
 
 @media (min-width: $screen-xs-max) {

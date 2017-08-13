@@ -21,7 +21,7 @@ gulp.task('html:w', function () {
 })
 
 gulp.task('sass', function () {
-  return gulp.src('scss/**/*.scss')
+  return gulp.src(['scss/**/*.scss'])
     .pipe(sourcemaps.init())  // Process the original sources
     .pipe(sass())
     .pipe(sourcemaps.write()) // Add the map to modified source.
