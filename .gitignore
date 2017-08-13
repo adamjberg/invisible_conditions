@@ -4,6 +4,7 @@ public/css
 public/js
 public/*.html
 public/*.php
+public/www.pid
 node_modules/
 .env
 db.sqlite3

@@ -23,4 +23,37 @@ else {
 
 $connection->close();
 
+$list_id = "4d3c48027c";
+$api_key = "19fcaac86a87e14377fb69c4967c2428-us15";
+
+$base_url = "https://us15.api.mailchimp.com/3.0";
+$endpoint = "/lists/" . $list_id . "/members";
+$url = $base_url . $endpoint;
+$name = array(
+  "FNAME" => "Adam",
+  "LNAME" => "Berg"
+);
+$subscribe_data = array(
+	'email_address' => "adam@xyzdigital.com",
+  "status" => "subscribed",
+  "merge_fields" => $name
+);
+
+$json_subscribe_data = json_encode($subscribe_data);
+
+$ch = curl_init();
+curl_setopt($ch,CURLOPT_URL, $url);
+curl_setopt($ch,CURLOPT_POST, 1);
+curl_setopt($ch,CURLOPT_POSTFIELDS, $json_subscribe_data);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_USERPWD, "registration:" . $api_key);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'Content-Type: application/json',
+    'Content-Length: ' . strlen($json_subscribe_data))
+);
+
+$result = curl_exec($ch);
+
+curl_close($ch);
+
 ?>
