@@ -199,4 +199,11 @@ block content
               input(type="radio" name="research_interest" id="research-interest-no" value="no")
               label.inline(for="research-interest-no") No, I am not interested
       .text-center
-        button(type="submit") Register
+        button#register(type="submit") Register
+        #success.hidden.text-success
+          p Thank you for your interest in the Invisible Conditions Conference.  A member of our team will contact you as soon as possible.
+        #error.hidden.text-danger
+          p Oh no, Something went wrong
+          p Please
+            a(href="/#contact-us") Contact us
+            | so we can diagnose the problem.

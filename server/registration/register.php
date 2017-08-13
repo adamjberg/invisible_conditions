@@ -31,7 +31,7 @@ $api_key = "19fcaac86a87e14377fb69c4967c2428-us15";
 $base_url = "https://us15.api.mailchimp.com/3.0";
 $endpoint = "/lists/" . $list_id . "/members";
 $url = $base_url . $endpoint;
-echo $url;
+
 $name = array(
   "FNAME" => $_POST["first_name"],
   "LNAME" => $_POST["last_name"]
@@ -56,7 +56,6 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 );
 
 $result = curl_exec($ch);
-echo $result;
 
 curl_close($ch);
 
