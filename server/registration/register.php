@@ -23,18 +23,21 @@ else {
 
 $connection->close();
 
-$list_id = "4d3c48027c";
+$mentor_list_id = "eb475a36e5";
+$participant_list_id = "4d3c48027c";
+$list_id = $_POST["type"] == "mentor" ? $mentor_list_id : $participant_list_id;
 $api_key = "19fcaac86a87e14377fb69c4967c2428-us15";
 
 $base_url = "https://us15.api.mailchimp.com/3.0";
 $endpoint = "/lists/" . $list_id . "/members";
 $url = $base_url . $endpoint;
+echo $url;
 $name = array(
-  "FNAME" => "Adam",
-  "LNAME" => "Berg"
+  "FNAME" => $_POST["first_name"],
+  "LNAME" => $_POST["last_name"]
 );
 $subscribe_data = array(
-	'email_address' => "adam@xyzdigital.com",
+	'email_address' => $_POST["email"],
   "status" => "subscribed",
   "merge_fields" => $name
 );
@@ -42,9 +45,9 @@ $subscribe_data = array(
 $json_subscribe_data = json_encode($subscribe_data);
 
 $ch = curl_init();
-curl_setopt($ch,CURLOPT_URL, $url);
-curl_setopt($ch,CURLOPT_POST, 1);
-curl_setopt($ch,CURLOPT_POSTFIELDS, $json_subscribe_data);
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $json_subscribe_data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_USERPWD, "registration:" . $api_key);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
@@ -53,6 +56,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 );
 
 $result = curl_exec($ch);
+echo $result;
 
 curl_close($ch);
 

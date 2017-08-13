@@ -2,7 +2,7 @@
 .vscode
 public/css
 public/js
-public/*.html
+public/**/*.html
 public/*.php
 public/www.pid
 node_modules/
