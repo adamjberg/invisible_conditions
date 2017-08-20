@@ -1,3 +1,33 @@
+#registration-page {
+    .panel:first-child {
+        flex: 2 1 0;
+    }
+    .panel-header {
+        border: 2px $dark-blue solid;
+        width: 100%;
+    }
+    #instructions {
+        margin: 50px 0;
+    }
+    .step {
+      margin: 20px 0;
+      font-size: $font-size-lg;
+    }
+    .step,
+    .step-body {
+        text-transform: uppercase;
+    }
+    .orange,
+    .blue {
+        font-weight: bold;
+    }
+    .orange,
+    .blue,
+    .step-body {
+        display: inline;
+    }
+}
+
 #register-form {
     button {
         margin-bottom: 20px;
@@ -5,5 +35,5 @@
 }
 
 #logo {
-  margin: 20px;
+    margin: 20px;
 }

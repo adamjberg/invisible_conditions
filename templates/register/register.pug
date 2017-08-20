@@ -3,207 +3,253 @@ extends ../base.pug
 mixin checkbox(id, label)
   .form-group
     input(type="checkbox" id=id name=id)
-    label(for=id)= label
+    label(for=id style="display: inline;")= label
 
 block content
-  .container(style="padding-top: 100px;")
-    if mentor
-      #mentor
-        p Thank you for your interest in becoming a mentor for the Invisible Conditions Conference. To be a mentor you must be available for the day of the conference, October 14, 2017 to be held at the UBC Vancouver campus in Ponderosa Commons. You must also be available for a training session that will take place in mid-September and complete a criminal record check.
-        p To participate as a mentor, please answer the following questions. Your answers will be kept confidential. 
-    else
-      p Thank you for your interest in the Invisible Conditions Conference.  To participate in the conference, please complete the following application.  Your answers will be kept confidential.  
-      p Once your application is processed, you will receive a consent form by email.  Please complete the consent form and mail it to:
-      p.text-center 
-        | ATTN: SIMON LISAINGO
-        br
-        | Educational and Counselling Psychology, and Special Education
-        br
-        | Vancouver Campus
-        br
-        | 2125 Main Mall
-        br
-        | Vancouver, BC Canada V6T 1Z4
-
-
-      p If you are under the age of 19, the consent form must be signed by your parent or guardian. 
-      p Please note, for our pilot year, enrollment is limited to 30 participants.   To reserve your spot, please enclose with your consent form a $20 cheque made out to "The University of British Columbia".
-      p It is our hope to run this conference at no cost to participants.  If we reach our funding goal your cheque will be returned to you at the conference.  If you do not attend the conference, your cheque will be retained as a donation to the ICC 2018. 
-
-    form#register-form(action="/register.php" method="post")
-      if mentor
-        input(name="type" type="hidden" value="mentor")
-        fieldset#student-status
-          legend Student Status
-          .form-group
-            label Are you a UBC Student?
-              span.required
-            .text-danger.hidden Please note that at this time, during our pilot year, only UBC Students are eligible to be mentors.
-            select
-              option.hidden(disabled selected value)
-              option Yes
-              option No
-      else
-        input(name="type" type="hidden" value="participant")
-
-      fieldset
-        legend Personal Information
-        .row
-          .col-md
-            .form-group
-              label First Name
-                span.required
-              input(name="first_name" required)
-          .col-md
-            .form-group
-              label Last Name
-                span.required
-              input(name="last_name" required)
-        .row
-          .col-md
-            .form-group
-              label Gender
-                span.required
-              select(name="gender" required)
-                option(value="male") Male
-                option(value="female") Female
-                option(value="prefer_not") Prefer not to say
-                option(value="other") Other
-          .col-md
-            .form-group
-              label I identify as
-              input(name="gender_identity")
-        .row
-          .col-md
-            .form-group
-              label Birthdate
-                span.required
-              input(name="birthday" type="date" required)
-      fieldset
-        legend Contact Information
-        .row
-          .col-md
-            .form-group
-              label Phone Number
-                span.required
-              input(name="phone" type="tel" required)
-          .col-md
-            .form-group
-              label E-mail
-                span.required
-              input(name="email" type="email" required)
-        .row
-          .col-md
-            .form-group
-              label How do you want to be contacted?
-                span.required
-              select(name="contact_pref" required)
-                option(value="phone") Phone
-                option(value="email") E-mail
-        .row
-          .col-md
-            .form-group
-              label Street or Mailing Address
-              input(name="address")
-          .col-md
-            .form-group
-              label Appt. or Unit #
-              input(name="unit_number")
-        .row
-          .col-md
-            .form-group
-              label City
-                span.required
-              input(name="city" required)
-          .col-md
-            .form-group
-              label Postal Code
-                span.required
-              input(name="postal_code" required)
-      fieldset
-        legend Emergency Contact
-        .row
-          .col-md
-            .form-group
-              label First Name
-                span.required
-              input(name="emergency_contact_first" required)
-          .col-md
-            .form-group
-              label Last Name
-                span.required
-              input(name="emergency_contact_last" required)
-        .row
-          .col-md
-            .form-group
-              label Phone Number
-                span.required
-              input(name="emergency_contact_phone" type="tel" required)
-          .col-md
-            .form-group
-              label E-mail
-                span.required
-              input(name="emergency_contact_email" type="email" required)
-      fieldset
-        legend Special Considerations
-        p Please let us know how we can make your experience more comfortable in the following areas:
-        .row
-          .col-md
-            .form-group
-              label Accessibility
-              textarea(name="accessibility" rows=4)
-        .row
-          .col-md
-            .form-group
-              label Allergies
-              textarea(name="allergies" rows=4)
-        .row
-          .col-md
-            .form-group
-              label Other
-              textarea(name="special_other" rows=4)
-      fieldset
-        legend Background Information
-        .form-group
-          label How did you find out about the conference?
-          input(name="how_find")
-        .form-group
+  #registration-page
+    #carousel
+      .container
+        if mentor
+          img(src="/img/ICC_Headers_MentorRegistration.jpg")
+        else
+          img(src="/img/ICC_Headers_ParticipantRegistration.jpg")
+    .container
+      #mission-statement
+        if mentor
+          span REGISTER TO JOIN US 
+          span.highlight  ON OCTOBER 14
+        else
+          span.highlight BE A MENTOR AND JOIN US
+          span  ON OCTOBER 14
+      #instructions
+        .panel
+          .panel-header
+            if mentor
+              h1 Mentor Registration Instructions
+            else
+              h1 Registration Instructions
+        .panel-group
+          .panel
+            .panel-body
+              p(style="font-size: 1.5em;") Thank you for your interest in becoming a mentor for the 
+                span.bold Invisible Conditions Conference.
+              if mentor
+                p To be a mentor you must be available for the day of the conference, October 14, 2017 to be held at the UBC Vancouver campus in Ponderosa Commons. You must also be available for a training session that will take place in mid-September and complete a criminal record check.
+                p To participate as a mentor, please answer the following questions. Your answers will be kept confidential. 
+              else
+                p To participate in the conference, please complete the following application.  Your answers will be kept confidential.  
+                p Once your application is processed, you will receive a consent form by email.  Please complete the consent form and mail it to:
+                p.blue
+                  | ATTN: SIMON LISAINGO
+                  br
+                  | Educational and Counselling Psychology, and Special Education
+                  br
+                  | Vancouver Campus
+                  br
+                  | 2125 Main Mall
+                  br
+                  | Vancouver, BC Canada V6T 1Z4
+                p
+                  em *If you are under the age of 19, the consent form must be signed by your parent or guardian. 
+                p Please note, for our pilot year, enrollment is
+                  span.orange  limited to 30 participants.   
+                  | To reserve your spot, please enclose with your consent form a 
+                  span.blue $20 cheque made out to "The University of British Columbia".
+                p It is our hope to run this conference at no cost to participants.  If we reach our funding goal your cheque will be returned to you at the conference.  If you do not attend the conference, your cheque will be retained as a donation to the ICC 2018. 
+          .panel
+            .panel-body
+              .step
+                .orange Step One:
+                .step-body  Complete the form
+              .step
+                .blue Step Two:
+                .step-body  Wait for the next steps email
+              .step
+                .orange Step Three:
+                if mentor
+                  .step-body  Complete a criminal record check & come to training
+                else
+                  .step-body  Send the consent form & $20 cheque
+              .step
+                .blue Step Four:
+                .step-body  Join us on October 14
+      .panel
+        .panel-header
           if mentor
-            label What are you hoping to learn and/or experience by being a mentor at the conference?
+            h1 Mentor Registration Form
           else
-            label What are you hoping to learn and/or experience at the conference?
-          textarea(name="learn" rows=4)
-        if !mentor
+            h1 Registration Form
+      form#register-form(action="/register.php" method="post")
+        if mentor
+          input(name="type" type="hidden" value="mentor")
+          fieldset#student-status
+            legend Student Status
+            .form-group
+              label Are you a UBC Student?
+                span.required
+              .text-danger.hidden Please note that at this time, during our pilot year, only UBC Students are eligible to be mentors.
+              select
+                option.hidden(disabled selected value)
+                option Yes
+                option No
+        else
+          input(name="type" type="hidden" value="participant")
+
+        fieldset
+          legend Personal Information
+          .row
+            .col-md
+              .form-group
+                label First Name
+                  span.required
+                input(name="first_name" required)
+            .col-md
+              .form-group
+                label Last Name
+                  span.required
+                input(name="last_name" required)
+          .row
+            .col-md
+              .form-group
+                label Gender
+                  span.required
+                select(name="gender" required)
+                  option(value="male") Male
+                  option(value="female") Female
+                  option(value="prefer_not") Prefer not to say
+                  option(value="other") Other
+            .col-md
+              .form-group
+                label I identify as
+                input(name="gender_identity")
+          .row
+            .col-md
+              .form-group
+                label Birthdate
+                  span.required
+                input(name="birthday" type="date" required)
+        fieldset
+          legend Contact Information
+          .row
+            .col-md
+              .form-group
+                label Phone Number
+                  span.required
+                input(name="phone" type="tel" required)
+            .col-md
+              .form-group
+                label E-mail
+                  span.required
+                input(name="email" type="email" required)
+          .row
+            .col-md
+              .form-group
+                label How do you want to be contacted?
+                  span.required
+                select(name="contact_pref" required)
+                  option(value="phone") Phone
+                  option(value="email") E-mail
+          .row
+            .col-md
+              .form-group
+                label Street or Mailing Address
+                input(name="address")
+            .col-md
+              .form-group
+                label Appt. or Unit #
+                input(name="unit_number")
+          .row
+            .col-md
+              .form-group
+                label City
+                  span.required
+                input(name="city" required)
+            .col-md
+              .form-group
+                label Postal Code
+                  span.required
+                input(name="postal_code" required)
+        fieldset
+          legend Emergency Contact
+          .row
+            .col-md
+              .form-group
+                label First Name
+                  span.required
+                input(name="emergency_contact_first" required)
+            .col-md
+              .form-group
+                label Last Name
+                  span.required
+                input(name="emergency_contact_last" required)
+          .row
+            .col-md
+              .form-group
+                label Phone Number
+                  span.required
+                input(name="emergency_contact_phone" type="tel" required)
+            .col-md
+              .form-group
+                label E-mail
+                  span.required
+                input(name="emergency_contact_email" type="email" required)
+        fieldset
+          legend Special Considerations
+          p Please let us know how we can make your experience more comfortable in the following areas:
+          .row
+            .col-md
+              .form-group
+                label Accessibility
+                textarea(name="accessibility" rows=4)
+          .row
+            .col-md
+              .form-group
+                label Allergies
+                textarea(name="allergies" rows=4)
+          .row
+            .col-md
+              .form-group
+                label Other
+                textarea(name="special_other" rows=4)
+        fieldset
+          legend Background Information
           .form-group
-            label Have you ever been to a conference or meeting with peers who share your condition?
-            select(name="prev_conference")
-              option.hidden(disabled selected value)
-              option(value="yes") Yes
-              option(value="no") No
-        .form-group
-          label How comfortable are you discussing your condition?
-          input(name="how_comfortable" rows=4)
-        .form-group
-          label What are some of you hobbies, interests, or favourite activities?
-          textarea(name="hobbies" rows=4)
-      fieldset
-        legend Research Interest
-          span.required
-        p The Invisible Conditions Conference is interested in learning more about your experiences with inflammatory bowel disease (IBD) and sharing what we learn generally from the teens and mentors with IBD. This will help with the future development of our conference and potentially helping others with invisible conditions. Your information will be identified by a code number only, and your anonymity will be protected at all times (i.e., in no way will your name be disclosed).
-        .row
-          .col-md
+            label How did you find out about the conference?
+            input(name="how_find")
+          .form-group
+            if mentor
+              label What are you hoping to learn and/or experience by being a mentor at the conference?
+            else
+              label What are you hoping to learn and/or experience at the conference?
+            textarea(name="learn" rows=4)
+          if !mentor
             .form-group
-              input(type="radio" name="research_interest" id="research-interest-yes" value="yes")
-              label.inline(for="research-interest-yes") Yes, I am interested (signed consent will be collected at the conference).
-            .form-group
-              input(type="radio" name="research_interest" id="research-interest-no" value="no")
-              label.inline(for="research-interest-no") No, I am not interested
-      .text-center
-        button#register(type="submit") Register
-        #success.hidden.text-success
-          p Thank you for your interest in the Invisible Conditions Conference.  A member of our team will contact you as soon as possible.
-        #error.hidden.text-danger
-          p Oh no, Something went wrong
-          p Please
-            a(href="/#contact-us") Contact us
-            | so we can diagnose the problem.
+              label Have you ever been to a conference or meeting with peers who share your condition?
+              select(name="prev_conference")
+                option.hidden(disabled selected value)
+                option(value="yes") Yes
+                option(value="no") No
+          .form-group
+            label How comfortable are you discussing your condition?
+            input(name="how_comfortable" rows=4)
+          .form-group
+            label What are some of you hobbies, interests, or favourite activities?
+            textarea(name="hobbies" rows=4)
+        fieldset
+          legend Research Interest
+            span.required
+          p The Invisible Conditions Conference is interested in learning more about your experiences with inflammatory bowel disease (IBD) and sharing what we learn generally from the participants, parents, and mentors. This will help with the future development of our conference and potentially help others with invisible conditions. Your information will be identified by a code number only, and your anonymity will be protected at all times (i.e., in no way will your name be disclosed).  Please select all that apply:
+          .row
+            .col-md
+              +checkbox('research-interest-yes-parent', 'I am a parent/guardian of a participant (under the age of 16), and I am interested.  A questionnaire and consent form will be distributed by email.')
+              +checkbox('research-interest-yes-participant', 'I am a participant (over the age of 16), and I am interested.  A consent form will be distributed by email, and a questionnaire will be distributed at the conference.')
+              +checkbox('research-interest-no', 'No, I am not interested')
+        .text-center
+          button#register(type="submit") Register
+          #success.hidden.text-success
+            p Thank you for your interest in the Invisible Conditions Conference.  A member of our team will contact you as soon as possible.
+          #error.hidden.text-danger
+            p Oh no, Something went wrong
+            p Please
+              a(href="/#contact-us") Contact us
+              | so we can diagnose the problem.

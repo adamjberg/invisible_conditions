@@ -58,7 +58,8 @@
                 color: $light-blue;
             }
             button {
-                background: $light-blue; //border: 2px solid $blue;
+                background: $light-blue;
+                border: 2px solid $light-blue2;
             }
         }
         &:nth-child(even) {
@@ -66,7 +67,8 @@
                 color: $orange;
             }
             button {
-                background: $orange; //border: 2px solid $blue;
+                background: $orange;
+                border: 2px solid $dark-orange;
             }
         }
     }
