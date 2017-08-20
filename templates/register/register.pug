@@ -79,7 +79,7 @@ block content
             h1 Mentor Registration Form
           else
             h1 Registration Form
-      form#register-form(action="/register.php" method="post" novalidate)
+      form#register-form(action="/register.php" method="post")
         if mentor
           input(name="type" type="hidden" value="mentor")
           fieldset#student-status

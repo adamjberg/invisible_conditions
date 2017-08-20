@@ -32,7 +32,8 @@ function subscribe($list_id) {
 
   $name = array(
     "FNAME" => $_POST["first_name"],
-    "LNAME" => $_POST["last_name"]
+    "LNAME" => $_POST["last_name"],
+    "INTEREST" => $_POST["type"] == "mentor" ? "Mentoring" : "Attending"
   );
   $subscribe_data = array(
     'email_address' => $_POST["email"],
