@@ -82,16 +82,6 @@ block content
       form#register-form(action="/register.php" method="post")
         if mentor
           input(name="type" type="hidden" value="mentor")
-          fieldset#student-status
-            legend Student Status
-            .form-group
-              label Are you a UBC Student?
-                span.required
-              .text-danger.hidden Please note that at this time, during our pilot year, only UBC Students are eligible to be mentors.
-              select
-                option.hidden(disabled selected value)
-                option Yes
-                option No
         else
           input(name="type" type="hidden" value="participant")
 
