@@ -53,6 +53,12 @@
                 content: "”";
             }
         }
+        button {
+            position: absolute;
+            top: 98%;
+            left: 10%;
+            width: 80%;
+        }
         &:nth-child(odd) {
             .quote {
                 color: $light-blue;

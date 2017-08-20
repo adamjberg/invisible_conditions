@@ -45,6 +45,6 @@ $(document).ready(function () {
 
   members.click(function (member) {
     var index = members.index(this);
-    modalService.setIndex(index);
+    //modalService.setIndex(index);
   });
 });
