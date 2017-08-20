@@ -79,7 +79,7 @@ block content
             h1 Mentor Registration Form
           else
             h1 Registration Form
-      form#register-form(action="/register.php" method="post")
+      form#register-form(action="/register.php" method="post" novalidate)
         if mentor
           input(name="type" type="hidden" value="mentor")
           fieldset#student-status
@@ -233,7 +233,7 @@ block content
             label How comfortable are you discussing your condition?
             input(name="how_comfortable" rows=4)
           .form-group
-            label What are some of you hobbies, interests, or favourite activities?
+            label What are some of your hobbies, interests, or favourite activities?
             textarea(name="hobbies" rows=4)
         fieldset
           legend Research Interest
@@ -244,6 +244,9 @@ block content
               +checkbox('research-interest-yes-parent', 'I am a parent/guardian of a participant (under the age of 16), and I am interested.  A questionnaire and consent form will be distributed by email.')
               +checkbox('research-interest-yes-participant', 'I am a participant (over the age of 16), and I am interested.  A consent form will be distributed by email, and a questionnaire will be distributed at the conference.')
               +checkbox('research-interest-no', 'No, I am not interested')
+        p
+          em *Please note that by registering for the Invisible Conditions Conference you are allowing us to email you with communications focused on participating in this event, you will have to elect to get further emails through our mailing list.
+        +checkbox('mailing-list', 'I want to join your mailing list.')
         .text-center
           button#register(type="submit") Register
           #success.hidden.text-success
