@@ -5,6 +5,7 @@ nav {
         }
     }
     #register-now {
+        text-transform: uppercase;
         color: $dark-orange;
         &:hover {
             color: $orange;
