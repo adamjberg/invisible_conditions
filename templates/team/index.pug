@@ -1,4 +1,4 @@
-extends base.pug
+extends ../base.pug
 
 block content
   #team
@@ -63,6 +63,6 @@ block content
 
           each member in members
             +member(member)
-    include contact
-    include feed
+    include ../contact
+    include ../feed
     include modal
