@@ -28,6 +28,7 @@
         @media (max-width: $screen-sm-max) {
             flex-basis: 100%;
             margin-bottom: 15px;
+            margin-right: 0 !important;
         }
     }
 }
