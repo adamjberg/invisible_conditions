@@ -1,14 +1,7 @@
-doctype html
-html
-  head
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    title Invisible Conditions Conference | Support Us
-    link(rel="stylesheet" href="css/theme.css")
-    script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
-    script(src="js/app.js")
-  body#support-us
-    header
-      include nav
+extends base.pug
+
+block content
+  #support-us
     #banner
       #carousel
         .container
@@ -22,4 +15,3 @@ html
     include support
     include contact
     include feed
-    include footer

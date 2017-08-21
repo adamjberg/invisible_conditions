@@ -18,7 +18,7 @@ $(document).ready(function () {
         $('#error').toggleClass('hidden', true);
       },
       success: function (data) {
-        $('#success').toggleClass('hidden', false);
+        window.location.href = "/register/complete";
       },
       complete: function () {
         submitButton.remove();

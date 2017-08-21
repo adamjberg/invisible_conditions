@@ -1,14 +1,7 @@
-doctype html
-html
-  head
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    title Invisible Conditions Conference | Meet the Team
-    link(rel="stylesheet" href="css/theme.css?version=1")
-    script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
-    script(src="js/app.js?version=1")
-  body#team
-    header
-      include nav
+extends base.pug
+
+block content
+  #team
     #banner
       #carousel
         .container
@@ -70,5 +63,4 @@ html
             +member(member)
     include contact
     include feed
-    include footer
     include modal

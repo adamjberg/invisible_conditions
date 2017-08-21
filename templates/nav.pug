@@ -1,11 +1,24 @@
-nav
+nav.navbar.navbar-toggleable-sm.navbar-light
   .container
-    a.navbar-brand(href="/")
-      img(src="/img/logo-nav.png" height="48px" width="auto" alt="Invisible Conditions")
-    .navbar-nav.pull-right
-      a(href="/#about") About
-      a(href="/team") Team
-      a(href="/support-us#donate") Donate
-      a(href="/support-us#become-a-sponsor") Sponsor
-      a(href="/#contact-us") Contact Us
-      a#register(href="/register") Register Now
+    button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    a.navbar-brand(href='#')
+      img(src="/img/logo-nav.png" height="40px" width="auto" alt="Invisible Conditions")
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item.dropdown
+          a#navbarAboutUs.nav-link.dropdown-toggle(href="#", data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | About Us
+          .dropdown-menu(aria-labelledby='navbarAboutUs')
+            a.dropdown-item(href='/#about') About the Conference
+            a.dropdown-item(href='/team') Meet the team
+        li.nav-item.dropdown
+          a#navbarSupportUs.nav-link.dropdown-toggle(href='/support-us', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | Support Us
+          .dropdown-menu(aria-labelledby='navbarSupportUs')
+            a.dropdown-item(href='/support-us#donate') Donate to Us
+            a.dropdown-item(href='/support-us#become-a-sponsor') Become a Sponsor
+        li.nav-item
+          a.nav-link(href="/#contact-us") Contact Us
+        li.nav-item
+          a.nav-link#register-now(href="/register") Register Now

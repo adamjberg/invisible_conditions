@@ -1,44 +1,24 @@
-$nav-height: 65px;
-
 nav {
-    width: 100%;
-    background-color: rgba(white, 0.9);
-    color: $dark-blue;
-    font-family: $font-bold;
-    font-size: $font-size-md;
-    line-height: 3em;
-    text-align: center;
-    height: $nav-height;
-
-    .navbar-brand {
-        display: block;
-    }
-    .navbar-nav {
-        display: none;
-        a {
-            display: inline-block;
-            padding: 0px 15px;
-            line-height: $nav-height;
+    button {
+        &:hover {
+            background: initial;
         }
     }
-
-    #register {
-      text-transform: uppercase;
-      color: $dark-orange;
-      &:hover {
-        color: $orange;
-      }
+    #register-now {
+        color: $dark-orange;
+        &:hover {
+            color: $orange;
+        }
+    }
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
     }
 }
 
-@media (min-width: $screen-xs-max) {
-    nav {
-        text-align: inherit;
-        .navbar-brand {
-            display: inline-block;
-        }
-        .navbar-nav {
-            display: block;
-        }
+.navbar-light .navbar-nav .nav-link {
+    color: $dark-blue;
+    &:hover {
+        color: $orange;
     }
 }
