@@ -17,7 +17,7 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
   $result = $connection->query($sql);
 
   $arr = array();
-  $keys = ["type", "first_name", "last_name", "gender", "gender_identity", "birthday", "phone", "email", "contact_pref", "address", "unit_number", "city", "postal_code", "emergency_contact_first", "emergency_contact_last", "emergency_contact_phone", "emergency_contact_email", "accessibility", "allergies", "special_other", "how_find", "learn", "prev_conference", "how_comfortable", "hobbies", "research_interest"];
+  $keys = ["type", "first_name", "last_name", "gender", "gender_identity", "birthday", "phone", "email", "contact_pref", "address", "unit_number", "city", "postal_code", "emergency_contact_first", "emergency_contact_last", "emergency_contact_phone", "emergency_contact_email", "accessibility", "allergies", "special_other", "how_find", "learn", "prev_conference", "how_comfortable", "hobbies", "research-interest-yes-parent", "research-interest-yes-participant", "research-interest-no", "mailing-list"];
 
   if ($result->num_rows > 0) {
       // output data of each row
