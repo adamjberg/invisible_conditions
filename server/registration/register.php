@@ -64,8 +64,4 @@ $participant_list_id = "4d3c48027c";
 
 subscribe($_POST["type"] == "mentor" ? $mentor_list_id : $participant_list_id);
 
-if($_POST["mailing-list"] == "on") {
-  subscribe("1e31923fde");
-}
-
 ?>
