@@ -9,12 +9,11 @@ mixin checkbox(id, label)
 
 block content
   #registration-page
-    #carousel
-      .container
-        if mentor
-          img(src="/img/ICC_Headers_MentorRegistration.jpg")
-        else
-          img(src="/img/ICC_Headers_ParticipantRegistration.jpg")
+    #banner
+      if mentor
+        #carousel(style="background-image: url('/img/ICC_Headers_MentorRegistration.jpg')")
+      else
+        #carousel(style="background-image: url('/img/ICC_Headers_ParticipantRegistration.jpg')")
     .container
       #mission-statement
         if mentor
