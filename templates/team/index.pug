@@ -61,8 +61,8 @@ block content
               bio: ""
             }];
 
-          each member in members
-            +member(member)
+          each member, index in members
+            +member(member, index)
     include ../contact
     include ../feed
     include modal

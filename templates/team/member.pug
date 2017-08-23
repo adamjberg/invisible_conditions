@@ -1,7 +1,10 @@
-mixin member(member)
+mixin member(member, index)
   .member
-    .bubble 
-      img(src='/img/BubbleOrange.svg')
+    .bubble
+      if index % 2 == 0
+        img(src='/img/BubbleBlue.svg')
+      else
+        img(src='/img/BubbleOrange.svg')
       .first= member.first
       .last= member.last
     .title= member.title
