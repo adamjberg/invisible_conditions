@@ -38,6 +38,16 @@ $(document).ready(function () {
   function open(index) {
     var member = members[index];
     modal.toggleClass('hidden', false);
+
+    var even = index % 2 == 0;
+    modal.toggleClass('even', even);
+
+    var bubbleImage = '/img/BubbleOrange.svg';
+    if(even) {
+      bubbleImage = '/img/BubbleBlue.svg';
+    }
+    modal.find('img').attr('src', bubbleImage);
+    
     modal.find('.first').text(member.first);
     modal.find('.last').text(member.last);
     modal.find('.title').text(member.title);
