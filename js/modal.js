@@ -51,6 +51,7 @@ $(document).ready(function () {
     modal.find('.first').text(member.first);
     modal.find('.last').text(member.last);
     modal.find('.title').text(member.title);
+    modal.find('.qualifications').text(member.qualifications);
     modal.find('.quote').text(member.quote);
     modal.find('.bio').text(member.bio);
   }
