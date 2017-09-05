@@ -15,14 +15,12 @@ $(document).ready(function () {
       data: registrationData,
       cache: false,
       error: function (jqXHR, textStatus, errorThrown) {
-        $('#error').toggleClass('hidden', true);
+        $('#error').toggleClass('hidden', false);
+        submitButton.attr('disabled', false);
       },
       success: function (data) {
         window.location.href = "/register/complete";
       },
-      complete: function () {
-        submitButton.remove();
-      }
     });
   });
 });
