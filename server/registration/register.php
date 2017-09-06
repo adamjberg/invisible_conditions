@@ -15,16 +15,19 @@ if($statement = $connection->prepare("INSERT INTO registration_registration (dat
     if(false === $rc) {
       http_response_code(400);
       error_log("Bind Param Failed: " . $statement->error);
+      error_log($json);
     }
     else if($statement->execute()) {    }
     else {
         http_response_code(400);
         error_log("Execute Failed: " . $statement->error);
+        error_log($json);
     }
 }
 else {
   http_response_code(400);
   error_log("Prepare Failed: " .  $connection->error);
+  error_log($json);
 }
 
 $connection->close();
