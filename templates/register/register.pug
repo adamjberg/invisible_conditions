@@ -229,12 +229,19 @@ block content
         fieldset
           legend Research Interest
             span.required
-          p The Invisible Conditions Conference is interested in learning more about your experiences with inflammatory bowel disease (IBD) and sharing what we learn generally from the participants, parents, and mentors. This will help with the future development of our conference and potentially help others with invisible conditions. Your information will be identified by a code number only, and your anonymity will be protected at all times (i.e., in no way will your name be disclosed).  Please select all that apply:
-          .row
-            .col-md
-              +checkbox('research-interest-yes-parent', 'I am a parent/guardian of a participant (under the age of 16), and I am interested.  A questionnaire and consent form will be distributed by email.')
-              +checkbox('research-interest-yes-participant', 'I am a participant (over the age of 16), and I am interested.  A consent form will be distributed by email, and a questionnaire will be distributed at the conference.')
-              +checkbox('research-interest-no', 'No, I am not interested')
+          if mentor
+            p The Invisible Conditions Conference is interested in learning more about your experiences with inflammatory bowel disease (IBD) and share what we learn generally from teens and mentors with IBD. This will help with future development of our conference and potentially help others with invisible conditions. Your information will be identified by a code number and your anonymity will be protected at all times (i.e., in no way will your name be disclosed).
+            .row
+              .col-md
+                +checkbox('research-interest-yes-participant', 'Yes, I am interested. A questionnaire and consent form will be distributed by email.')
+                +checkbox('research-interest-no', 'No, I am not interested')
+          else
+            p The Invisible Conditions Conference is interested in learning more about your experiences with inflammatory bowel disease (IBD) and sharing what we learn generally from the participants, parents, and mentors. This will help with the future development of our conference and potentially help others with invisible conditions. Your information will be identified by a code number only, and your anonymity will be protected at all times (i.e., in no way will your name be disclosed).  Please select all that apply:
+            .row
+              .col-md
+                +checkbox('research-interest-yes-parent', 'I am a parent/guardian of a participant (under the age of 16), and I am interested.  A questionnaire and consent form will be distributed by email.')
+                +checkbox('research-interest-yes-participant', 'I am a participant (over the age of 16), and I am interested.  A consent form will be distributed by email, and a questionnaire will be distributed at the conference.')
+                +checkbox('research-interest-no', 'No, I am not interested')
         p
           em *Please note that by registering for the Invisible Conditions Conference you are agreeing to subscribe to our mailing list and allowing us to email you with communications focused on participating in this event.
         .text-center
