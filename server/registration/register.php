@@ -10,16 +10,21 @@ $json = json_encode($_POST);
 include 'connection.php';
 include 'env.php';
 
-if($statement = $connection->prepare("INSERT INTO registration_registration (data) VALUES ('" . $json . "');")) {
-    if($statement->execute()) {    }
+if($statement = $connection->prepare("INSERT INTO registration_registration (data) VALUES (?);")) {
+    $rc = $statement->bind_param('s', $json);
+    if(false === $rc) {
+      http_response_code(400);
+      error_log("Bind Param Failed: " . $statement->error);
+    }
+    else if($statement->execute()) {    }
     else {
         http_response_code(400);
-        $errors["error"] = $statement.error;
-        echo json_encode($errors);
+        error_log("Execute Failed: " . $statement->error);
     }
 }
 else {
   http_response_code(400);
+  error_log("Prepare Failed: " .  $connection->error);
 }
 
 $connection->close();
