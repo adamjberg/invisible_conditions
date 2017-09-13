@@ -28,7 +28,7 @@ var members = [{
   title: "Content, Experts, & Evaluation",
   quote: "Because of his condition, he has committed himself to contributing to the conversation of curing IBD.",
   bio: "Peter has been diagnosed with Crohn's disease, Indeterminate Colitis, and Ulcerative colitis throughout his 11 years with IBD. Because of his condition, he has committed himself to contributing to the conversation of curing IBD directly, through hands-on research and indirectly, through fundraising efforts with local organizations. He believes that connecting with others with IBD has been integral to his success, and hopes to facilitate this type of connection with youth living with IBD.",
-  qualifications: "MA student, Experimental Medicine, Faculty of Medicine, University of British Columbia"
+  qualifications: "MSc student, Experimental Medicine, Faculty of Medicine, University of British Columbia"
 },
 {
   first: "Hailey",
