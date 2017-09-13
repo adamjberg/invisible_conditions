@@ -41,7 +41,6 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
     fputcsv($df, $row);
   }
   fclose($df);
-  echo ob_get_clean();
 
   header("Content-Type: application/force-download");
   header("Content-Type: application/octet-stream");
@@ -50,5 +49,7 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
   header("Content-Disposition: attachment;filename=registration.csv");
 
   $connection->close();
+
+  echo ob_get_clean();
 }
 ?>
